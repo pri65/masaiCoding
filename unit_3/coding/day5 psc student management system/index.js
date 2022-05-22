@@ -3,7 +3,7 @@ function Student(n,c,u,i,b){
   this.course=c;
   this.unit=u;
   this.image=i;
-  this.batch=Ft-Web-{'b'};  
+  this.batch='Ft-Web${b}';  
 }
 
 function storeData(e){
@@ -21,11 +21,11 @@ function storeData(e){
 
     let s1=new Student(name,course,unit,image,batch);
     
-    let data=JSON.parse(localStorage.getItem("Students")) || []
+    let data=JSON.parse(localStorage.getItem("Student")) || []
 
     data.push(s1);
 
-    localStorage.setItem("Students",JSON.stringify(data));
+    localStorage.setItem("Student",JSON.stringify(data));
 
     console.log(s1);
 }
@@ -35,7 +35,7 @@ function calculate(){
     //then take an empty object
     //this function is calculate no of batches that we to show in navbar
 
-    let data=JSON.parse(localStorage.getItem("Students")) || [];
+    let data=JSON.parse(localStorage.getItem("Student")) || [];
     let obj={};
      
     for(var i=0; i<data.length; i++)
