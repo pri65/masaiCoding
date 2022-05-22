@@ -3,7 +3,7 @@ function Student(n,c,u,i,b){
   this.course=c;
   this.unit=u;
   this.image=i;
-  this.batch=b;  
+  this.batch='Ft-Web{b}';  
 }
 
 function storeData(e){
@@ -19,5 +19,7 @@ function storeData(e){
     let image=form.image.value;
     let batch=form.batch.value;
 
-    console.log(name,course,unit,image,batch);
+    let s1=new Student(name,course,unit,image,batch);
+    console.log(s1);
+    
 }
