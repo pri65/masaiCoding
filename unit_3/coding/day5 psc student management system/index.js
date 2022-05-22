@@ -29,3 +29,21 @@ function storeData(e){
 
     console.log(s1);
 }
+
+function calculate(){
+    //first take out the data from ls
+    //then take an empty object
+    //this function is calculate no of batches that we to show in navbar
+
+    let data=JSON.parse(localStorage.getItem("Students")) || [];
+    let obj={};
+     
+    for(var i=0; i<data.length; i++)
+    {
+       if(obj[data[i].batch]){
+           obj[data[i].batch]=1;
+       } 
+    }
+    console.log(obj);
+}
+calculate();
