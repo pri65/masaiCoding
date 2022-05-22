@@ -1,5 +1,6 @@
 function append(){
     let data=JSON.parse(localStorage.getItem("Student")) || [];
+let container=document.getElementById("container");
 
     data.forEach(function(el){
         let div=document.createElement('div');
@@ -14,6 +15,8 @@ function append(){
     let s=document.createElement('s');
     s.innerText=el.batch;
 
+    div.append(p,q,r,img,s);
+    container.append(div);
 });
     
 }
