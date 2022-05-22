@@ -1,7 +1,10 @@
 
 
-function storeData(){
+function storeData(e){
+    //e is for event
     //this function will collect all the data from input box and create an object out of it and store it to the local storage
+    e.preventDefault()
+    //this preventDefault is to prevent site from reloading
     let form=document.getElementById("students_data");
     let name=form.name.value;  
     //form.id.value
@@ -9,4 +12,6 @@ function storeData(){
     let unit=form.unit.value;
     let image=form.image.value;
     let batch=form.batch.value;
+
+    console.log(name,course,unit,image,batch);
 }
