@@ -23,8 +23,9 @@ function storeData(e){
     
     let data=JSON.parse(localStorage.getItem("Students")) || []
 
+    data.push(s1);
+
+    localStorage.setItem("Students",JSON.stringify(data));
+
     console.log(s1);
-
-    
-
 }
