@@ -20,6 +20,11 @@ function storeData(e){
     let batch=form.batch.value;
 
     let s1=new Student(name,course,unit,image,batch);
-    console.log(s1);
     
+    let data=JSON.parse(localStorage.getItem("Students")) || []
+
+    console.log(s1);
+
+    
+
 }
