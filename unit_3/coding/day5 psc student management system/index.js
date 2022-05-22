@@ -3,7 +3,7 @@ function Student(n,c,u,i,b){
   this.course=c;
   this.unit=u;
   this.image=i;
-  this.batch='Ft-Web{b}';  
+  this.batch=Ft-Web-{'b'};  
 }
 
 function storeData(e){
@@ -41,8 +41,13 @@ function calculate(){
     for(var i=0; i<data.length; i++)
     {
        if(obj[data[i].batch]){
-           obj[data[i].batch]=1;
+           obj[data[i].batch]=0;
        } 
+    }
+
+    for(let i=0; i<data.length; i++)
+    {
+        obj[data[i].batch]++;
     }
     console.log(obj);
 }
