@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="index.css" />
     <title>Document</title>
 </head>
 <body>
@@ -12,7 +12,7 @@
         <a href="./dashboard.html">Dashboard</a>
     </button>
     <h1>Add Students Data</h1>
-    <form id="students_data" onsubmit="storeData()">
+    <form id="students_data" onsubmit="storeData(event)">
     <input type="text" id="name" placeholder="Name" />
     <input type="text" id="course" placeholder="Course" />
     <input type="number" id="unit" placeholder="Unit"/>
@@ -23,4 +23,4 @@
 </body>
 </html>
 
-<script src="./scripts/index.js"></script>
+<script src="index.js"></script>
