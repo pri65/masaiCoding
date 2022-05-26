@@ -161,12 +161,12 @@ console.log(son);
 
 Prototype chaining
 
-// [1,2,3,4,5]
-// remove(2);
+[1,2,3,4,5]
+remove(2);
 
-// function func() {
-//   console.log(arguments);
-//   console.log(arguments.length);
-// }
+function func() {
+  console.log(arguments);
+  console.log(arguments.length);
+}
 
-// func("a", "b", "c", "d");
+func("a", "b", "c", "d");
