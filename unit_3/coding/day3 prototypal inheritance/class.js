@@ -142,11 +142,11 @@ myArray.prototype.print = function () {
   console.log(Object.values(this));
 };
 
-// arr3.हटाओ();
-// arr3.पुश(7);
-// arr3.पुश(8);
+arr3.remove();
+arr3.push(7);
+arr3.push(8);
 
-// arr3.छापो();
+arr3.print();
 
 // let grandfather = {
 //   height: "tall",
