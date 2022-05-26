@@ -112,13 +112,13 @@ function myArray() {
   }
 }
 
-// function myArray() {
-//   this.length = arguments.length;
+function myArray() {
+  this.length = arguments.length;
 
-//   for (let i = 0; i < arguments.length; i++) {
-//     this[i] = arguments[i];
-//   }
-// }
+  for (let i = 0; i < arguments.length; i++) {
+    this[i] = arguments[i];
+  }
+}
 
 // let arr3 = new myArray(1, 2, 3, 4, 5);
 
