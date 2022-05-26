@@ -133,14 +133,14 @@ myArray.prototype.push = function (value) {
   this.length++;
 };
 
-// myArray.prototype.हटाओ = function () {
-//   delete this[this.length - 1];
-//   this.length--;
-// };
+myArray.prototype.remove = function () {
+  delete this[this.length - 1];
+  this.length--;
+};
 
-// myArray.prototype.छापो = function () {
-//   console.log(Object.values(this));
-// };
+myArray.prototype.print = function () {
+  console.log(Object.values(this));
+};
 
 // arr3.हटाओ();
 // arr3.पुश(7);
