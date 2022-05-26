@@ -25,17 +25,17 @@ const tiger = {
   type: "animal",
 };
 
-// const lion = {
-//   name: "lion",
-//   legs: 4,
-//   fur: true,
-//   tail: true,
-//   type: "animal",
-// };
+const lion = {
+  name: "lion",
+  legs: 4,
+  fur: true,
+  tail: true,
+  type: "animal",
+};
 
-// const tiger = Object.create(cat);
-// tiger.name = "tiger";
-// console.log(tiger);
+const tiger = Object.create(cat);
+tiger.name = "tiger";
+console.log(tiger);
 
 // const student = {
 //   batch: "web 18",
