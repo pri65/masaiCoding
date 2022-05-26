@@ -48,19 +48,19 @@ const s1 = Object.create(student, { name: { value: "sanjay" } });
 // s1.name = "sanjay";
 console.log(s1);
 
-// Nike product (brand, logo, seller) --- from flipkart
+Nike product (brand, logo, seller) --- from flipkart
 
-// const product = {
-//   brand: "Nike",
-//   logo: "url",
-//   seller: "Flipkart",
-// };
+const product = {
+  brand: "Nike",
+  logo: "url",
+  seller: "Flipkart",
+};
 
-// let p1 = Object.create(product);
-// console.log(p1);
+let p1 = Object.create(product);
+console.log(p1);
 
-// Constructor function
-// Create a constructor function to create the blueprint
+Constructor function
+Create a constructor function to create the blueprint
 
 // function Product(type) {
 //   this.type = type;
