@@ -72,27 +72,27 @@ Product.prototype.discount = function () {
   console.log("50% discount");
 };
 
-// Product.prototype.changeType = function (type) {
-//   this.type = type;
-// };
+Product.prototype.changeType = function (type) {
+  this.type = type;
+};
 
-// Product.prototype.price = 1000;
+Product.prototype.price = 1000;
 
-// function discount () {
-//   console.log("50% discount");
-// };
+function discount () {
+  console.log("50% discount");
+};
 
-// Call, apply ----> Temporary
-// Prototype ------> Permanent
+Call, apply ----> Temporary
+Prototype ------> Permanent
 
-// let p1 = new Product("shoe");
+let p1 = new Product("shoe");
 
-// let p2 = new Product("Sneakers");
+let p2 = new Product("Sneakers");
 
-// console.log(p1);
-// p1.changeType("t-shirt");
-// console.log(p1);
-// console.log(p2);
+console.log(p1);
+p1.changeType("t-shirt");
+console.log(p1);
+console.log(p2);
 
 let arr = [1, 2, 3];
 let arr2 = new Array(1, 2, 3);
