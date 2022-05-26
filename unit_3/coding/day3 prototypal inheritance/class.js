@@ -37,16 +37,16 @@ const tiger = Object.create(cat);
 tiger.name = "tiger";
 console.log(tiger);
 
-// const student = {
-//   batch: "web 18",
-//   institute: "Masai School",
-//   unit: 3,
-//   course: "FSWD",
-// };
+const student = {
+  batch: "web 18",
+  institute: "Masai School",
+  unit: 3,
+  course: "FSWD",
+};
 
-// const s1 = Object.create(student, { name: { value: "sanjay" } });
-// // s1.name = "sanjay";
-// console.log(s1);
+const s1 = Object.create(student, { name: { value: "sanjay" } });
+// s1.name = "sanjay";
+console.log(s1);
 
 // Nike product (brand, logo, seller) --- from flipkart
 
