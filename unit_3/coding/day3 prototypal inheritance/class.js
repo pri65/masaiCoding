@@ -148,18 +148,18 @@ arr3.push(8);
 
 arr3.print();
 
-// let grandfather = {
-//   height: "tall",
-// };
+let grandfather = {
+  height: "tall",
+};
 
-// let father = Object.create(grandfather);
+let father = Object.create(grandfather);
 
-// let son = Object.create(father);
-// son.name = "babu bhaiya";
+let son = Object.create(father);
+son.name = "babu bhaiya";
 
-// console.log(son);
+console.log(son);
 
-// Prototype chaining
+Prototype chaining
 
 // [1,2,3,4,5]
 // remove(2);
