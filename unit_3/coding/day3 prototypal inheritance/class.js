@@ -62,15 +62,15 @@ console.log(p1);
 Constructor function
 Create a constructor function to create the blueprint
 
-// function Product(type) {
-//   this.type = type;
-//   this.brand = "nike";
-//   (this.logo = "URL"), (this.seller = "Flipkart");
-// }
+function Product(type) {
+  this.type = type;
+  this.brand = "nike";
+  (this.logo = "URL"), (this.seller = "Flipkart");
+}
 
-// Product.prototype.discount = function () {
-//   console.log("50% discount");
-// };
+Product.prototype.discount = function () {
+  console.log("50% discount");
+};
 
 // Product.prototype.changeType = function (type) {
 //   this.type = type;
