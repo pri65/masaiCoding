@@ -36,11 +36,11 @@ async function getData() {
 
     let users = await res.json();
     append(users.data);
-//     console.log(users.data);
-//   } catch (err) {
-//     console.log(err);
-//   }
-// }
+    console.log(users.data);
+  } catch (err) {
+    console.log(err);
+  }
+}
 
 // getData();
 
