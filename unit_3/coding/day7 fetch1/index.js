@@ -17,25 +17,25 @@ const url = "https://reqres.in/api/users"; // Destination
 
 fetch(url)
   .then(function (res) {
-    // Readable + Stream( data in chunks )
-    // Collect the stream
-//     return res.json(); // res.collect()
-//   })
-//   .then(function (res) {
-//     console.log(res);
-//   })
-//   .catch(function (err) {
-//     console.log(err);
-//   });
+    Readable + Stream( data in chunks )
+    Collect the stream
+    return res.json(); // res.collect()
+  })
+  .then(function (res) {
+    console.log(res);
+  })
+  .catch(function (err) {
+    console.log(err);
+  });
 
-// Async Await
+Async Await
 
-// async function getData() {
-//   try {
-//     let res = await fetch(url);
+async function getData() {
+  try {
+    let res = await fetch(url);
 
-//     let users = await res.json();
-//     append(users.data);
+    let users = await res.json();
+    append(users.data);
 //     console.log(users.data);
 //   } catch (err) {
 //     console.log(err);
