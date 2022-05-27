@@ -42,25 +42,25 @@ async function getData() {
   }
 }
 
-// getData();
+getData();
 
-// function append(data) {
-//   let container = document.getElementById("container");
-//   data.forEach(function (el) {
-//     let img = document.createElement("img");
-//     img.src = el.avatar;
+function append(data) {
+  let container = document.getElementById("container");
+  data.forEach(function (el) {
+    let img = document.createElement("img");
+    img.src = el.avatar;
 
-//     let h2 = document.createElement("h2");
-//     h2.innerText = el.first_name;
+    let h2 = document.createElement("h2");
+    h2.innerText = el.first_name;
 
-//     let p = document.createElement("p");
-//     p.innerText = el.email;
+    let p = document.createElement("p");
+    p.innerText = el.email;
 
-//     let div = document.createElement("div");
-//     div.append(img, h2, p);
+    let div = document.createElement("div");
+    div.append(img, h2, p);
 
-//     container.append(div);
-//   });
+    container.append(div);
+  });
 // }
 
 const url = "https://fakestoreapi.com/products";
