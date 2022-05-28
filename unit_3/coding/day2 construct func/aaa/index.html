@@ -13,28 +13,41 @@
 </html>
 <script>
 
-let member1 = {
-    name: "Amar",
-    skill: "singer",
-    live: "Goa",
+// let member1 = {
+//     name: "Amar",
+//     skill: "singer",
+//     live: "Goa",
 
-    perform: function(order){
-        console.log(`${this.name} has ${order} skill`)
-    },
-};
+//     perform: function(order){
+//         console.log(`${this.name} has ${order} skill`)
+//     },
+// };
 
-let member2 = {
-    name: "Akbar",
-    skill: "chef",
-    live: "Mumbai",
+// let member2 = {
+//     name: "Akbar",
+//     skill: "chef",
+//     live: "Mumbai",
+// }
+
+// let member3 = {
+//     name: "Anthony",
+//     skill: "Magician",
+//     live: "Kashmir",
+// }
+
+// member1.perform.call(member2, "singer");
+// member1.perform.call(member3, "singer")
+
+let amar={
+    location:"Goa",
+    profession:["Singer"],
 }
-
-let member3 = {
-    name: "Anthony",
-    skill: "Magician",
-    live: "Kashmir",
+function skill(){
+    console.log(`this.profession`)
 }
-
-member1.perform.call(member2, "singer");
-member1.perform.call(member3, "singer")
+let akbar={
+    location:"Mumbai",
+    profession:["Chef"],
+}
+skill.call(amar)
 </script>
