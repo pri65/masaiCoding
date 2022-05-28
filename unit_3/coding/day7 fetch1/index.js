@@ -20,6 +20,7 @@ fetch(url)
     //the data will be in the form of chunks thats why we use json
     //Readable + Stream( data in chunks )
    // Collect the stream
+   //we want to make the data in the readable form dts why we have to collect it using json , and it is like a promise that is why we use another .then()
     return res.json(); // or we can write res.collect()
   })
   .then(function (res) {
