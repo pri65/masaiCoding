@@ -8,17 +8,18 @@
 
 */
 
-let x = fetch(); // It will take time
-console.log(x);
+// let x = fetch(); // It will take time because we dont have any destination
+// console.log(x);
 
-Youtube, Google map, facebook, twitter
-
-const url = "https://reqres.in/api/users"; // Destination
+// Youtube, Google map, facebook, twitter
+//here we will first give the destination
+ const url = "https://reqres.in/api/users"; // Destination
 
 fetch(url)
   .then(function (res) {
-    Readable + Stream( data in chunks )
-    Collect the stream
+    //the data will be in the form of chunks thats why we use json
+    //Readable + Stream( data in chunks )
+   // Collect the stream
     return res.json(); // res.collect()
   })
   .then(function (res) {
@@ -28,71 +29,75 @@ fetch(url)
     console.log(err);
   });
 
-Async Await
+// Async Await
 
-async function getData() {
-  try {
-    let res = await fetch(url);
+// async function getData() {
+//   try {
+//     let res = await fetch(url);
 
-    let users = await res.json();
-    append(users.data);
-    console.log(users.data);
-  } catch (err) {
-    console.log(err);
-  }
-}
-
-getData();
-
-function append(data) {
-  let container = document.getElementById("container");
-  data.forEach(function (el) {
-    let img = document.createElement("img");
-    img.src = el.avatar;
-
-    let h2 = document.createElement("h2");
-    h2.innerText = el.first_name;
-
-    let p = document.createElement("p");
-    p.innerText = el.email;
-
-    let div = document.createElement("div");
-    div.append(img, h2, p);
-
-    container.append(div);
-  });
+//     let users = await res.json();
+//     append(users.data);
+//     console.log(users.data);
+//   } catch (err) {
+//     console.log(err);
+//   }
 // }
 
-const url = "https://fakestoreapi.com/products";
+// getData();
 
-async function getData() {
-  try {
-    let res = await fetch(url);
-    let products = await res.json(); // Collect data
-    append(products);
-    console.log(products);
-  } catch (err) {
-    console.log(err);
-  }
-}
+// function append(data) {
+//   let container = document.getElementById("container");
+//   data.forEach(function (el) {
+//     let img = document.createElement("img");
+//     img.src = el.avatar;
 
-getData();
+//     let h2 = document.createElement("h2");
+//     h2.innerText = el.first_name;
 
-function append(data) {
-  let container = document.getElementById("container");
-  data.forEach(function (el) {
-    let img = document.createElement("img");
-    img.src = el.image;
+//     let p = document.createElement("p");
+//     p.innerText = el.email;
 
-    let h2 = document.createElement("h2");
-    h2.innerText = el.title;
+//     let div = document.createElement("div");
+//     div.append(img, h2, p);
 
-    let p = document.createElement("p");
-    p.innerText = el.description;
+//     container.append(div);
+//   });
+// // }
 
-    let div = document.createElement("div");
-    div.append(img, h2, p);
+// const url = "https://fakestoreapi.com/products";
 
-    container.append(div);
-  });
-}
+// async function getData() {
+//   try {
+//     let res = await fetch(url);
+//     let products = await res.json(); // Collect data
+//     append(products);
+//     console.log(products);
+//   } catch (err) {
+//     console.log(err);
+//   }
+// }
+
+// getData();
+
+// function append(data) {
+//   let container = document.getElementById("container");
+//   data.forEach(function (el) {
+//     let img = document.createElement("img");
+//     img.src = el.image;
+
+//     let h2 = document.createElement("h2");
+//     h2.innerText = el.title;
+
+//     let p = document.createElement("p");
+//     p.innerText = el.description;
+
+//     let div = document.createElement("div");
+//     div.append(img, h2, p);
+
+//     container.append(div);
+//   });
+// }
+
+
+
+
