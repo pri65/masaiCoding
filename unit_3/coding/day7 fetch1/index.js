@@ -20,7 +20,7 @@ fetch(url)
     //the data will be in the form of chunks thats why we use json
     //Readable + Stream( data in chunks )
    // Collect the stream
-    return res.json(); // res.collect()
+    return res.json(); // or we can write res.collect()
   })
   .then(function (res) {
     console.log(res);
