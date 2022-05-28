@@ -1,55 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Throw dice</title>
 </head>
 <body>
-    <form id="form">
-        <label for="pname">product name:</label><br>
-        <input type="text" id="pname" name="pname" value=""><br>
-        <label for="cname">category:</label><br>
-        <input type="text" id="cname" name="cname" value=""><br><br>
-        <label for="iname">image:</label><br>
-        <input type="file" id="iname" name="iname" value=""><br><br>
-        <label for="prc">price:</label><br>
-        <input type="text" id="prc" name="prc" value=""><br><br>
-        <label for="gname">gender:</label><br>
-        <input type="text" id="gname" name="gname" value=""><br><br>
-        <label for="sname">sold:</label><br>
-        <input type="text" id="sname" name="sname" value=""><br><br>
-        <input type="submit" value="Submit" id="add">
-      </form> 
-
-      <script>
-          function Person(product,category,image,price,gender,sold) {
-          this.product=product;
-          this.category=category;
-          this.image=image;
-          this.price=price;
-          this.gender=gender;
-          this.sold=sold;
-        }
-   
-            
-             document.getElementById("form").addEventListener("submit",function(e){
-                 e.preventDefault();
-               
-              var pname=document.getElementById("pname").value;
-              var cname=document.getElementById( "cname").value;
-              var iname=document.getElementById( "iname").value;
-              var prc=document.getElementById("prc").value;
-              var gname=document.getElementById("gname").value;
-              var sname=document.getElementById("sname").value;
-              
-              var result=new Person(pname,cname,iname,prc,gname,sname)
-              console.log(result);
-                localStorage.setItem("product",JSON.stringify(result))
-                console.log("local",JSON.parse(localStorage.getItem("product")))
-             })
-      </script>
+  
 </body>
 </html>
-
