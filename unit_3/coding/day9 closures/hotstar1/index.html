@@ -45,6 +45,8 @@ async function searchMovies(q){
 
 
 function appendMovies(movies){
+movies_div.innerHTML=null;
+
     if(movies===undefined){
         return false;
     }
