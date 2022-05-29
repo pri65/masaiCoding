@@ -8,6 +8,6 @@ async function getData(){
     //now lets check wthr we are getting correct url or not
    // console.log(url);
 let res=await fetch(url);
-let data=res.json();
+let data=await res.json();
    
 }
