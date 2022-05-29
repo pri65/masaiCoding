@@ -9,10 +9,12 @@ async function getData(){
    // console.log(url);
 let res=await fetch(url);
 let data=await res.json();
+append(data);
    console.log(data);
 }
 
 function append(data){
+    let container=document.getElementById("container");
         let h3=document.createElement("h3");
         h3.innerText=el.name;
 
@@ -24,4 +26,6 @@ function append(data){
 
         let p3=document.createElement("p");
         p.innerText=`Min temp: $(data.main.temp_min)`;
+
+        container.append(h3,p1,p2,p3);
 }
