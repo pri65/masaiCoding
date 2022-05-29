@@ -9,12 +9,19 @@ async function getData(){
    // console.log(url);
 let res=await fetch(url);
 let data=await res.json();
-   
+   console.log(data);
 }
 
-function apppend(data){
-    data.forEach(function(el){
+function append(data){
         let h3=document.createElement("h3");
         h3.innerText=el.name;
-    })
+
+        let p1=document.createElement("p")
+        p.innerText=`Current temp: $(data.main.temp)`;
+
+        let p2=document.createElement("p");
+        p.innerText=`Max temp: $(data.main.temp_max)`;
+
+        let p3=document.createElement("p");
+        p.innerText=`Max temp: $(data.main.temp_max)`;
 }
