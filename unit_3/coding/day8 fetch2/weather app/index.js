@@ -11,3 +11,10 @@ let res=await fetch(url);
 let data=await res.json();
    
 }
+
+function apppend(data){
+    data.forEach(function(el){
+        let h3=document.createElement("h3");
+        h3.innerText=el.name;
+    })
+}
