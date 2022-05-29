@@ -12,18 +12,4 @@ async function getData(lat, lon) {
   
     console.log(data);
   }
-  //// Based on current location
   
-  function getLocationWeather() {
-    navigator.geolocation.getCurrentPosition(success);
-  
-    function success(position) {
-      const latitude = position.coords.latitude;
-      const longitude = position.coords.longitude;
-  
-      getData(latitude, longitude);
-  
-      console.log(latitude);
-      console.log(longitude);
-    }
-  }

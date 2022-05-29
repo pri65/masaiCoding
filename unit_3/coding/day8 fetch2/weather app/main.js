@@ -29,4 +29,27 @@ function append(data){
         p3.innerText=`Min temp: ${data.main.temp_min}`;
 
         container.append(h3,p1,p2,p3);
+            let iframe=document.getElementById("gmap_canvas");
+            iframe.src=`https://maps.google.com/maps?q=${data.name}&t=&z=13&ie=UTF8&iwloc=&output=embed`
+
 }
+
+
+
+//// Based on current location
+  
+// function getLocationWeather() {
+//     navigator.geolocation.getCurrentPosition(success);
+  
+//     function success(position) {
+//       const latitude = position.coords.latitude;
+//       const longitude = position.coords.longitude;
+  
+//       getData(latitude, longitude);
+  
+//       console.log(latitude);
+//       console.log(longitude);
+//     }
+//   }
+
+
