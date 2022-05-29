@@ -36,7 +36,7 @@ async function searchMovies(q){
         let url=`https://www.omdbapi.com/?s=${q}&apikey=d806bd70`;
     let res=await fetch(url)
     let data=await res.json()
-    return data
+    return data.Search;
     } catch(error) {
         console.log("error:", error);
     } 
@@ -57,8 +57,10 @@ let query=document.getElementById("query").value;
 
 let response=searchMovies(query)
 let data = await response
-console.log("data:",data);
+appendMovies(data);
 }
+
+
 
 
 </script>
