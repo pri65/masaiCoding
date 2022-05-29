@@ -29,6 +29,7 @@
 //accept the input
 //fetch the data
 //append data
+let id;
 
 let movies_div=document.getElementById("movies")
 
@@ -66,9 +67,10 @@ let data = await response
 appendMovies(data);
 }
 
+
 function debounceFunction(func,delay){
 
-   setTimeout(function(){
+  id= setTimeout(function(){
     func();
 
    },delay); 
