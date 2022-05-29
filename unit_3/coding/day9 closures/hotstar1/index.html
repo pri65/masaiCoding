@@ -40,11 +40,12 @@ async function searchMovies(q){
     } 
 }
 
-function main() {
+async function main() {
 let query=document.getElementById("query").value;
 
-let x=searchMovies(query)
-console.log("x", x)
+let response=searchMovies(query)
+let data = await response
+console.log("data:",data);
 }
 
 
