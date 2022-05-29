@@ -29,6 +29,8 @@
 //fetch the data
 //append data
 
+let movies_div=document.getElementById("movies")
+
 async function searchMovies(q){
     try{
         let url=`https://www.omdbapi.com/?s=${q}&apikey=d806bd70`;
@@ -39,6 +41,16 @@ async function searchMovies(q){
         console.log("error:", error);
     } 
 }
+
+
+function appendMovies(movies){
+    movies.forEach(function(el){
+        let p=document.createElement("p")
+        p.innerText=el.Title;
+        movies_div.append(p);
+    })
+}
+
 
 async function main() {
 let query=document.getElementById("query").value;
