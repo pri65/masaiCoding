@@ -23,5 +23,5 @@ function append(data){
         p.innerText=`Max temp: $(data.main.temp_max)`;
 
         let p3=document.createElement("p");
-        p.innerText=`Max temp: $(data.main.temp_max)`;
+        p.innerText=`Min temp: $(data.main.temp_min)`;
 }
