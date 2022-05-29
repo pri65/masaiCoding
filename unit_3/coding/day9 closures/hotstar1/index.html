@@ -29,6 +29,13 @@
 //fetch the data
 //append data
 
+async function searchMovies(q){
+    let url=`https://www.omdbapi.com/?s=${q}&apikey=d806bd70`;
+    let res=await fetch(url)
+    let data=await res.json()
+    console.log(data);
+}
+
 function main() {
 let query=document.getElementById("query").value;
 console.log("query:", query)
