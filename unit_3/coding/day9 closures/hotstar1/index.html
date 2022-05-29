@@ -15,6 +15,7 @@
             width: 206px;
             border: 1px solid black;
             border-top: none;
+            overflow: scroll;
         }
     </style>
 </head>
@@ -44,6 +45,9 @@ async function searchMovies(q){
 
 
 function appendMovies(movies){
+    if(movies===undefined){
+        return false;
+    }
     movies.forEach(function(el){
         let p=document.createElement("p")
         p.innerText=el.Title;
