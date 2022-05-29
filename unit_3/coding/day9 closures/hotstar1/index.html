@@ -69,11 +69,12 @@ appendMovies(data);
 
 
 function debounceFunction(func,delay){
-
+if(id){
+    clearTimeout(id);
+}
   id= setTimeout(function(){
     func();
-
-   },delay); 
+    },delay); 
 
 }
 
