@@ -10,9 +10,9 @@
 
 //traditional way
 
-function Person(n) {
-    this.name=n;
-}
-Person.prototype.print=function(){
-    
-}
+// function Person(n) {
+//     this.name=n;
+// }
+// Person.prototype.print=function(){
+//     console.log(this.name);
+// }
