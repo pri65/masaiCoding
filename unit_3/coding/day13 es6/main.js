@@ -31,3 +31,12 @@
 // let p1=new Person("Anu");
 // console.log(p1);
 
+//1.functional programming
+//let str="pizza";
+
+// function pizza(){
+//     return "pizza";
+// }
+// let str=pizza();
+
+//2.object oriented programming
