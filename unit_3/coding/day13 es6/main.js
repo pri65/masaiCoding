@@ -19,3 +19,13 @@
 
 //let p1=new person("Sanjay");
 //console.log(p1);
+
+class Person {
+    constructor(n){
+        this.name=n;
+        this.print=function() {
+            console.log(this.name);
+        }
+    }
+}
+let p1=
