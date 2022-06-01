@@ -23,10 +23,10 @@
 class Person {
     constructor(n){
         this.name=n;
-        this.print=function() {
+        }
+        print(){
             console.log(this.name);
         }
     }
-}
 let p1=new Person("Anu");
 console.log(p1);
