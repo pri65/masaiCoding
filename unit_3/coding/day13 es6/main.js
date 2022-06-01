@@ -28,4 +28,5 @@ class Person {
         }
     }
 }
-let p1=
+let p1=new Person("Anu");
+console.log(p1);
