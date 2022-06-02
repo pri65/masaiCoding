@@ -34,6 +34,6 @@ let search = () =>{
     //then fetch url
     //also get query because we use it in the url
     let query=document.getElementById("query").value;
-    let url=https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${query}&key=[YOUR_API_KEY;
-    let res= 
+    let url=`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${query}&key=${api_key}`;
+    let res= fetch(url);
 }
