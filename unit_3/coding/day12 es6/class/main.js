@@ -59,13 +59,21 @@ let search = async () =>{
 //NOW APPEND THE DATA ON DOM
 //first create a function append
 //we want to append the data in container so get it
+//as in console data is in the form of array so we iterate using forEach
+//then will create element iframe
+//bcz it gives us vdo id
+//and this gonna be dynamic as we search for diff videos
 
-let append=()=>{
+let append=(data)=>{
     let container=document.getElementById("results");
+
+    data.forEach(el) => {
+        let iframe=document.createElement("iframe");
+    }
 }
 
-
-/* <iframe width="560" height="315"
+//this id=s our vdo id
+/*<iframe width="560" height="315"
  src="https://www.youtube.com/embed/zdp0zrpKzIE" 
  title="YouTube video player"
   frameborder="0" 
