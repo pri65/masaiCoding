@@ -22,3 +22,5 @@ function fun(a,...b){
     console.log(b)
 }
 fun("Box1","Box2","Box3","Box4");
+output=Box1;
+["Box2","Box3","Box4"]
