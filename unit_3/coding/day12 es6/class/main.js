@@ -70,12 +70,13 @@ let search = async () =>{
 let append=(data)=>{
     let container=document.getElementById("results");
 
-    data.forEach((el) => {
+    data.forEach(({id:{videoId}, snippet:{title}}) => {
         let div=document.createElement("div")
         let iframe=document.createElement("iframe");
         iframe.src=`https://www.youtube.com/embed/${videoId}`
         let h3=document.createElement("h3");
 
+        div.append(iframe,h3);
     })
 }
 
