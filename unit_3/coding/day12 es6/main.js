@@ -14,3 +14,11 @@
 // console.log(newArr)
 // output=[1,2,3,4,5,6]
 
+
+//REST
+//we can say that one is mine and remaining is yours
+function fun(a,...b){
+    console.log(a)
+    console.log(b)
+}
+fun("Box1","Box2","Box3","Box4");
