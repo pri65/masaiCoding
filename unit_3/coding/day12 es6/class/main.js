@@ -49,5 +49,5 @@ let search = async () =>{
     //now this (data=res.json()) will return a promise 
     //so to deal with it we use await
     let data=await res.json();
-
+console.log(data)
 }
