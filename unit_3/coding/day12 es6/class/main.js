@@ -31,7 +31,7 @@
 //YOUTUBE
 //first of all we create a function (an arrow function)
 const api_key="AIzaSyBa-WI4hKi9npmNiFi2KrGPytuPgUnaA5I";
-let search = () =>{
+let search = async () =>{
     //then fetch url
     //also get query because we use it in the url
     let query=document.getElementById("query").value;
@@ -40,6 +40,14 @@ let search = () =>{
     //if we use fetch alone it will return a promise
     //so to handle this promise we use await with fetch
     //and for await await we have to make function async
-
+    //console.log(res);
+    // this will return data in chuncks
+    //so to get it in collected form we use json
+    
+    //let data=res.json();
+    //console.log(data)
+    //now this (data=res.json()) will return a promise 
+    //so to deal with it we use await
+    let data=await res.json();
 
 }
