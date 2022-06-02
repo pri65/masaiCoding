@@ -34,6 +34,7 @@ const api_key="AIzaSyBa-WI4hKi9npmNiFi2KrGPytuPgUnaA5I";
 let search = async () =>{
     //then fetch url
     //also get query because we use it in the url
+    try {
     let query=document.getElementById("query").value;
     let url=`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${query}&key=${api_key}`;
     let res= await fetch(url);
@@ -49,5 +50,10 @@ let search = async () =>{
     //now this (data=res.json()) will return a promise 
     //so to deal with it we use await
     let data=await res.json();
-console.log(data)
+    console.log(data)
+} catch (err) {
+    console.log(err);
 }
+};
+
+//NOW APPEND THE DATA ON DOM
