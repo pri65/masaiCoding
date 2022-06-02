@@ -30,25 +30,25 @@
 
 //YOUTUBE
 //first of all we create a function (an arrow function)
+//then fetch url
+//also get query because we use it in the url
+//if we use fetch alone it will return a promise
+//so to handle this promise we use await with fetch
+//and for await await we have to make function async
+//console.log(res);
+// this will return data in chunks
+//so to get it in collected form we use json
+//let data=res.json();
+//console.log(data)
+//now this (data=res.json()) will return a promise 
+//so to deal with it we use await
+
 const api_key="AIzaSyBa-WI4hKi9npmNiFi2KrGPytuPgUnaA5I";
 let search = async () =>{
-    //then fetch url
-    //also get query because we use it in the url
     try {
     let query=document.getElementById("query").value;
     let url=`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${query}&key=${api_key}`;
     let res= await fetch(url);
-    //if we use fetch alone it will return a promise
-    //so to handle this promise we use await with fetch
-    //and for await await we have to make function async
-    //console.log(res);
-    // this will return data in chuncks
-    //so to get it in collected form we use json
-    
-    //let data=res.json();
-    //console.log(data)
-    //now this (data=res.json()) will return a promise 
-    //so to deal with it we use await
     let data=await res.json();
     console.log(data)
 } catch (err) {
@@ -57,3 +57,9 @@ let search = async () =>{
 };
 
 //NOW APPEND THE DATA ON DOM
+//first create a function append
+//we want to append the data in container so get it
+
+let append=()=>{
+    let container=document.getElementById("results");
+}
