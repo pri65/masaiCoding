@@ -24,3 +24,4 @@
 // fun("Box1","Box2","Box3","Box4");
 // output=Box1;
 // ["Box2","Box3","Box4"]
+//NOTE:-> we cant write fun(...b,a)
