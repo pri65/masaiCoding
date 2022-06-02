@@ -67,9 +67,10 @@ let search = async () =>{
 let append=(data)=>{
     let container=document.getElementById("results");
 
-    data.forEach(el) => {
+    data.forEach((el) => {
         let iframe=document.createElement("iframe");
-    }
+        iframe.src=`https://www.youtube.com/embed/${video}`
+    })
 }
 
 //this id=s our vdo id
