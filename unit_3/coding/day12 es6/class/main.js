@@ -60,6 +60,7 @@ let search = async () =>{
 //first create a function append
 //we want to append the data in container so get it
 //as in console data is in the form of array so we iterate using forEach
+//inside foreach pass the data which i want. like i want name, price, img etc pass it.first create them then pass.
 //then will create element iframe
 //bcz it gives us vdo id
 //and this gonna be dynamic as we search for diff videos
