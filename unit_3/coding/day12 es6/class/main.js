@@ -21,7 +21,7 @@
 //we cant also write;-> fun(a,b,...c)
 
 
-//api key=AIzaSyBa-WI4hKi9npmNiFi2KrGPytuPgUnaA5I
+
 //youtube
 //url
 //fetch()
@@ -30,6 +30,7 @@
 
 //YOUTUBE
 //first of all we create a function (an arrow function)
+const api_key="AIzaSyBa-WI4hKi9npmNiFi2KrGPytuPgUnaA5I";
 let search = () =>{
     //then fetch url
     //also get query because we use it in the url
