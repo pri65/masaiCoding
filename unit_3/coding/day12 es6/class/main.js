@@ -36,10 +36,10 @@ let search = () =>{
     //also get query because we use it in the url
     let query=document.getElementById("query").value;
     let url=`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${query}&key=${api_key}`;
-    let res= fetch(url);
+    let res= await fetch(url);
     //if we use fetch alone it will return a promise
     //so to handle this promise we use await with fetch
     //and for await await we have to make function async
-    
+
 
 }
