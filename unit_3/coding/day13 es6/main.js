@@ -33,10 +33,14 @@
 
 //1.functional programming
 //let str="pizza";
-
 // function pizza(){
 //     return "pizza";
 // }
 // let str=pizza();
+
+//append part
+let div=create("div");
+
+
 
 //2.object oriented programming
