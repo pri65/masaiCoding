@@ -26,7 +26,14 @@
 //url
 //fetch()
 
-//https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=thor&key=[YOUR_API_KEY
+//https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=thor&key=${api_key}
 
 //YOUTUBE
 //first of all we create a function (an arrow function)
+let search = () =>{
+    //then fetch url
+    //also get query because we use it in the url
+    let query=document.getElementById("query").value;
+    let url=https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${query}&key=[YOUR_API_KEY;
+    let res= 
+}
