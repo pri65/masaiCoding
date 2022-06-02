@@ -70,10 +70,11 @@ let search = async () =>{
 let append=(data)=>{
     let container=document.getElementById("results");
 
-    data.forEach(({id:{videoId}, snippet:{title}}) => {
+    data.forEach(({id:{videoId}, snippet:{title,thumbnails}}) => {
         let div=document.createElement("div")
         let img=document.createElement("img");
-        img.src=`https://www.youtube.com/embed/${videoId}`
+        img.src=thumbnails.default;
+        //`https://www.youtube.com/embed/${videoId}`
         let h3=document.createElement("h3");
         h3.innerText=title;
         div.append(img,h3);
