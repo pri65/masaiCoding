@@ -37,4 +37,7 @@ let search = () =>{
     let query=document.getElementById("query").value;
     let url=`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${query}&key=${api_key}`;
     let res= fetch(url);
+    //the above fetch will return a promise
+    //so to handle this promise we add json to it
+    
 }
