@@ -8,8 +8,9 @@
 //SPREAD
 //at first everything is in packet then we spread it
 //syntax for spread is ...
-let arr1=[1,2,3]
-let arr2=[4,5,6]
-let newArr=[...arr1,...arr2]
-console.log(newArr)
-output=[1,2,3,4,5,6]
+// let arr1=[1,2,3]
+// let arr2=[4,5,6]
+// let newArr=[...arr1,...arr2]
+// console.log(newArr)
+// output=[1,2,3,4,5,6]
+
