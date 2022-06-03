@@ -50,6 +50,10 @@ class Slot{
     }
 
     get isBooked(){
-        return this.isBooked;
+        return this._isBooked;
+    }
+
+    set isBooked(value) {
+        this._isBooked=value;
     }
 }
