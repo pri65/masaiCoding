@@ -73,14 +73,14 @@ let append=(data)=>{
 
     data.forEach(({id:{videoId}, snippet:{title,thumbnails}}) => {
         let div=document.createElement("div")
-        let img=document.createElement("img");
-        img.src=thumbnails.default.url;
+        // let img=document.createElement("img");
+        // img.src=thumbnails.default.url;
         let iframe=document.createElement("iframe");
         iframe.src=`https://www.youtube.com/embed/${videoId}`;
         iframe.allow="fullscreen";
         let h3=document.createElement("h3");
         h3.innerText=title;
-        div.append(img,h3);
+        div.append(iframe,h3);
         container.append(div);
     })
 }
