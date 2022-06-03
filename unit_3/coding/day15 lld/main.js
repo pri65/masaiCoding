@@ -14,4 +14,8 @@ class vehicle{
     get type() {
         return this.type;
     }
+
+    set type(value) {
+        this._type=value;
+    }
 }
