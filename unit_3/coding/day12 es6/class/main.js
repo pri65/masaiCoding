@@ -81,8 +81,13 @@ let append=(data)=>{
         let h3=document.createElement("h3");
         h3.innerText=title;
         div.append(iframe,h3);
+        
         container.append(div);
     })
+};
+
+let playVideo=(video)=>{
+    window.location.href="video.html";
 }
 
 //this id=s our vdo id
