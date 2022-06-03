@@ -21,9 +21,12 @@ class vehicle{
 }
 
 //car
-
 class car extends vehicle {
     constructor(regNumber,color) {
         super("car", regNumber,color);
     }
 }
+
+//bike and truck
+let c1=new car("DL-1234","Red");
+console.log(c1);
