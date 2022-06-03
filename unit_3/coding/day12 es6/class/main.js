@@ -94,7 +94,10 @@ let append=(data)=>{
 };
 
 let playVideo=(video)=>{
+    localStorage.setItem("video",JSON.stringify(video));
     window.location.href="video.html";
+
+    
 }
 
 //this id=s our vdo id
