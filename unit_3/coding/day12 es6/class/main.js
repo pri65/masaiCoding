@@ -76,7 +76,8 @@ let append=(data)=>{
         let img=document.createElement("img");
         img.src=thumbnails.default.url;
         let iframe=document.createElement("iframe");
-        iframe.src=`https://www.youtube.com/embed/${videoId}`
+        iframe.src=`https://www.youtube.com/embed/${videoId}`;
+        iframe.allow="fullscreen";
         let h3=document.createElement("h3");
         h3.innerText=title;
         div.append(img,h3);
