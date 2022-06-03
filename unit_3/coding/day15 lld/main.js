@@ -34,5 +34,12 @@ class Bike extends Vehicle {
     }
 }
 
+//truck
+class Truck extends Vehicle {
+    constructor(regNumber,color) {
+        super("truck", regNumber,color);
+    }
+}
+
 let c1=new car("DL-1234","Red");
 console.log(c1);
