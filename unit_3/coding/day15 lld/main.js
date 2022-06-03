@@ -57,3 +57,11 @@ class Slot{
         this._isBooked=value;
     }
 }
+
+//Individual floors
+class parkingFloor {
+    constructor(floorNumber, maxSpots) {
+        this.floorNumber=floorNumber;
+        this.parking
+    }
+}
