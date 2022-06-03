@@ -41,7 +41,7 @@ class Truck extends Vehicle {
     }
 }
 
-//perking spots
+//parking spots
 class Slot{
     constructor(type,number){
         this.number=number;
