@@ -81,11 +81,16 @@ let append=(data)=>{
         let h3=document.createElement("h3");
         h3.innerText=title;
         div.append(iframe,h3);
-        div.onclick=()=>{
-            playVideo();
+
+        let video={
+            title,
+            videoId,
         }
+        div.onclick=()=>{
+            playVideo(video);
+        };
         container.append(div);
-    })
+    });
 };
 
 let playVideo=(video)=>{
