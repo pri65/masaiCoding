@@ -62,6 +62,14 @@ class Slot{
 class parkingFloor {
     constructor(floorNumber, maxSpots) {
         this.floorNumber=floorNumber;
-        this.parking
+        this.parkingSpots=[];
+
+        for(let i=0; i<maxSpots; i++)
+        {
+            if(i===0)
+            {
+                this._parkingSpots.push(new Slot("car",i));
+            }
+        }
     }
 }
