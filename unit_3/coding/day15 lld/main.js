@@ -19,3 +19,11 @@ class vehicle{
         this._type=value;
     }
 }
+
+//car
+
+class car extends vehicle {
+    constructor(regNumber,color) {
+        super("car", regNumber,color);
+    }
+}
