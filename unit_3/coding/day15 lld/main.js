@@ -69,7 +69,16 @@ class parkingFloor {
             if(i===0)
             {
                 this._parkingSpots.push(new Slot("car",i));
+            } else if(i===1)
+            {
+                this._parkingSpots.push(new Slot("bike",i));
+            } else{
+                this._parkingSpots.push(new Slot("truck",i));
             }
         }
+    }
+
+    get parkingSpots(){
+        return this._parkingSpots;
     }
 }
