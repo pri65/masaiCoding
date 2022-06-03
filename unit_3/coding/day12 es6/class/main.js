@@ -74,7 +74,7 @@ let append=(data)=>{
     data.forEach(({id:{videoId}, snippet:{title,thumbnails}}) => {
         let div=document.createElement("div")
         let img=document.createElement("img");
-        img.src=thumbnails.default;
+        img.src=thumbnails.default.url;
         let iframe=document.createElement("iframe");
         iframe.src=`https://www.youtube.com/embed/${videoId}`
         let h3=document.createElement("h3");
