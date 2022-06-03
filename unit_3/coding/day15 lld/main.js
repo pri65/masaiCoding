@@ -46,6 +46,6 @@ class Slot{
     constructor(type,number){
         this.number=number;
         this.type=type;
-        
+        this.isBooked=false;
     }
 }
