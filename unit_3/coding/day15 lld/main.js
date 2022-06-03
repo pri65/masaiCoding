@@ -86,3 +86,6 @@ class parkingFloor {
         this._parkingSpots=value;
     }
 }
+
+let p1= new parkingFloor(0,3);
+console.log(p1);
