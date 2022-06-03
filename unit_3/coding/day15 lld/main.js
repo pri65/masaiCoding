@@ -41,5 +41,11 @@ class Truck extends Vehicle {
     }
 }
 
-let c1=new car("DL-1234","Red");
-console.log(c1);
+//perking spots
+class Slot{
+    constructor(type,number){
+        this.number=number;
+        this.type=type;
+        
+    }
+}
