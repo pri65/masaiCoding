@@ -81,4 +81,8 @@ class parkingFloor {
     get parkingSpots(){
         return this._parkingSpots;
     }
+
+    set parkingSpots(value) {
+        this._parkingSpots=value;
+    }
 }
