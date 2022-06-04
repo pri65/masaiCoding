@@ -36,4 +36,14 @@
 
 //1. FUNCTIONAL PROGRAMMING
 //IN THIS FUNCTIONS ARE THE PRIMARY WAY TO WRITE A PROGRAM
- 
+// let str = "Pizza";
+// function pizza(){
+//     return "Pizza";
+// }
+// let str = pizza();
+
+//Append
+// let div = create('div');
+// function create(n) {
+//   return document.createElement(n);
+// }
