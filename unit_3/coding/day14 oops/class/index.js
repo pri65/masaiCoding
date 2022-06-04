@@ -25,3 +25,6 @@ class miniSUV extends SUV {
     }
 }
 
+var car2=new miniSUV("duster","renault");
+console.log(car2);
+//output=miniSUV{name:'duster',brand:'renault',buyer:'anu',type:'mini-SUV'}
