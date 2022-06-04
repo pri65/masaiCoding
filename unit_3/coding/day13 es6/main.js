@@ -31,4 +31,5 @@
 // }
 // let p1 = new Person("Anu");
 // console.log(p1);
+//output=Person{name:'Anu'}
 
