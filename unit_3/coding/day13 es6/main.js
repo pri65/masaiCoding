@@ -47,3 +47,21 @@
 // function create(n) {
 //   return document.createElement(n);
 // }
+
+
+//2. OBJECT ORIENTED PROGRAMMING
+// let recipe = {
+//   items: ["Butter", "Paneer"],
+//   cook: function () {
+//     console.log(`cooking ${this.items[0]} ${this.items[1]}`);
+//   },
+// };
+// recipe.cook();
+// function items() {
+//   return ["Butter", "Paneer"];
+// }
+// function cook() {
+//   let i = items();
+//   console.log(`cooking ${i[0]} ${i[1]}`);
+// }
+// cook();
