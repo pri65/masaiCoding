@@ -20,5 +20,15 @@
 // console.log(p1);
 //output=Person{name:'Anu'}
 
-
+//2. ES6
+// class Person {
+//   constructor(n) {
+//     this.name = n;
+//   }
+//   print() {
+//     console.log(this.name);
+//   }
+// }
+// let p1 = new Person("Anu");
+// console.log(p1);
 
