@@ -33,3 +33,7 @@
 // console.log(p1);
 //output=Person{name:'Anu'}
 
+
+//1. FUNCTIONAL PROGRAMMING
+//IN THIS FUNCTIONS ARE THE PRIMARY WAY TO WRITE A PROGRAM
+ 
