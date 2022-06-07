@@ -1,3 +1,5 @@
+//super keyword used to inherit all the properties from parent.
+
 class Car {
     constructor(n,b) {
         this.name=n; 
