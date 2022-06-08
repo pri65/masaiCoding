@@ -22,6 +22,7 @@
         let getData=() =>{
          let res=await fetch("https://fakestoreapi.com/products/category/electronics");
          let data=await res.JSON();
+         append(data);
          console.log(res);   
         };
         getData();
@@ -41,6 +42,6 @@ data.forEach((el)=>{
 
     div.append(img,p);
     container.append(div);
-})
+});
         }
 </script>
