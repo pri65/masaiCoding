@@ -1,7 +1,6 @@
-let getData=() =>{
-    let res=await fetch("https://fakestoreapi.com/products/category/jewelery");
+let getData=async(url) =>{
+    let res=await fetch(url);
     let data=await res.JSON();
-    append(data);
-    console.log(res);   
+   return data; 
    };
-   getData();
+   
