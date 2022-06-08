@@ -10,6 +10,7 @@
 <body>
     <div id="navbar"></div>
     <h1>Electronics</h1>
+    <div id="container"></div>
 </body>
 </html>
 
@@ -17,4 +18,23 @@
     import navbar from "./components/navbar.js";
     
     document.getElementById("navbar").innerHTML=navbar();
+
+        let getData=() =>{
+         let res=await fetch("https://fakestoreapi.com/products/category/electronics");
+         let data=await res.JSON();
+         console.log(res);   
+        };
+        getData();
+
+        //so till here we got the data
+        //now the task is to append the data
+
+        let append=() =>{
+let container=document.getElementById("container");
+
+data.forEach((el)=>{
+    let p=document.createElement("p")
+    let img=document.createElement("img")
+})
+        }
 </script>
