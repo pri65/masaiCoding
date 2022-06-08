@@ -19,10 +19,12 @@
     
     document.getElementById("navbar").innerHTML=navbar();
    
-     import {getData,append} from "/script/appendFetch.js"  
+     import {getData,append} from "./script/appendFetch.js"  
       let url= "https://fakestoreapi.com/products/category/jewelery"; 
     let data=await getData(url);
-
+    let cont=document.getElementById("container");
+    append(data,cont);
+    console.log(data);
 </script>
 
 <!-- if you are exporting then you can rename it but if you are exporting normally then you cant -->
