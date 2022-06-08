@@ -26,3 +26,5 @@ function navbar() {
         </div>
     `;
 }
+
+export default navbar;
