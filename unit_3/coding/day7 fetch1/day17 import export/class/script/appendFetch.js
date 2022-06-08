@@ -5,8 +5,7 @@ let getData=async(url) =>{
    return data; 
    };
 
-   let append=(data) =>{
-    let container=document.getElementById("container");
+   let append=(data,container) =>{
 
    data.forEach((el)=>{
     let div=document.createElement("div")
