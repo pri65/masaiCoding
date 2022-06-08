@@ -1,3 +1,4 @@
+// FETCH FUNCTION
 let getData=async(url) =>{
     //this function will fetch the data and return the data.
     let res=await fetch(url);
@@ -5,6 +6,7 @@ let getData=async(url) =>{
    return data; 
    };
 
+// APPEND FUNCTION
    let append=(data,container) =>{
 
    data.forEach((el)=>{
@@ -18,3 +20,5 @@ div.append(img,p);
 container.append(div);
 });
 };
+
+export default
