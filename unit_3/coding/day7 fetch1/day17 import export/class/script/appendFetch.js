@@ -21,4 +21,4 @@ container.append(div);
 });
 };
 
-export default
+export {getData,append};
