@@ -24,5 +24,5 @@ function navbar() {
                 <a href="#">Signup</a>
             </h3>
         </div>
-    `
+    `;
 }
