@@ -7,8 +7,6 @@
     display: flex;
     padding: 8px;
     background-color: cyan;
-    position: sticky;
-    top: 0;
   }
   
   #navbar > div {
@@ -41,3 +39,5 @@
     padding: 0 0px;
     font-weight: bold;
   }
+  
+  

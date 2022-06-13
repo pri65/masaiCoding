@@ -19,27 +19,3 @@
     box-shadow: none;
     resize: none; /*remove the resize handle on the bottom right*/
   }
-  
-  #list {
-    width: 50%;
-    margin: 0 auto;
-  }
-  #list > div {
-  }
-  #list > div,
-  div {
-    margin: 0 auto;
-  }
-  
-  #list > div > div {
-    height: 450px;
-    width: 100%;
-  }
-  #list > div > div > img {
-    width: 100%;
-    height: 100%;
-  }
-  #list > div > h3,
-  p {
-    margin: 10px 10px;
-  }
