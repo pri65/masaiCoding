@@ -6,24 +6,20 @@ import { navbar } from "../components/navbar.js";
 let n=document.getElementById("navbar")
 n.innerHTML=navbar();
 
+import { searchImages } from "./fetch.js";
+
 let search = (e) => {
     if(e.key=== "Enter") {
-        searchImages();
+        let value=document.getElementById("query").value;
+        searchImages(API,value );
+        console.log(data);
     }
 };
 
 document.getElementById("query").addEventListener("keydown",search);
 
-let searchImages = async () =>{
-    let value=document.getElementById("query").value;
-   try {
-    let res= await fetch{
-        'https://api.unsplash.com/search/photos/?query=${value}&per_page=20&client_id=${API}'
-    };
-let data=await res.JSON();
-console.log(data);
-   } catch (err) {
-    console.log(err);
-   }
+// let searchImages = async () =>{
+//     let value=document.getElementById("query").value;
+  
 
-};
+// };
