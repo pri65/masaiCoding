@@ -1,4 +1,4 @@
-import navbar from '../components/navbar.js';
+import navbar from '../components/navbar.js.js';
 let navbarBox = document.querySelector('#navbar');
 navbarBox.innerHTML = navbar();
 let user = JSON.parse(localStorage.getItem('signinData'));

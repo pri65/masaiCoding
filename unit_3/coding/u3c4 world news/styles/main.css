@@ -1,0 +1,28 @@
+#navbar>input{
+   border-radius: 10px;
+}
+#navbar>div{
+    display: flex; 
+}
+#navbar>h3{
+    justify-content: space-between;
+}
+
+.data {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px ;
+    padding: 10px;
+}
+.data img {
+    height: 100px;
+    width: auto;
+}
+
+#container {
+    display: flex;
+}
+
+#sidebar {
+    height: 300px;
+}

@@ -1,0 +1,20 @@
+#navbar {
+    display: flex;
+    justify-content: space-evenly;
+    height: 80px;
+    background-color: yellow;
+    margin: auto;
+    border-radius: 20px;
+}
+#user-form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    height: 200px;
+    border: 2px solid black;
+    margin-top: 20px;
+    background-color: paleturquoise;
+    cursor: pointer;
+}
