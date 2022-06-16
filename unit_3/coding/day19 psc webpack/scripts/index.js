@@ -14,6 +14,7 @@ let search = (e) => {
        searchImages(API,value ).then((data) => {
         console.log(data);
         let container=document.getElementById("container");
+        container.innerHTML=null;
         append(data.results,container);
         });
     }
