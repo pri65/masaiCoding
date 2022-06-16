@@ -1,0 +1,59 @@
+.container {
+    width: 100%;
+  }
+  form {
+    width: 50%;
+    margin: 20px auto;
+    text-align: center;
+  }
+  form > input {
+    margin: auto;
+    height: 26px;
+    padding: 0 15px;
+    width: 30%;
+    border: 0.5px solid rgb(174, 173, 173);
+    border-radius: 6px;
+  }
+  input[type='submit'] {
+    width: 15%;
+    height: 1.8rem;
+    padding: 0 20px;
+    color: grey;
+    border: none;
+    border-radius: 6px;
+  }
+  .box {
+    width: 80%;
+    margin: 50px auto;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(1, 650);
+    justify-content: center;
+  }
+  
+  .box > div {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  .box > div > div {
+    height: 80%;
+  }
+  .box > div > div > img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .box > div > p,
+  h1,
+  h2 {
+    margin: 10px 10px;
+  }
+  
+  .box > div > .tag {
+    background-color: rgb(7, 202, 121);
+    color: white;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 8px;
+  }
