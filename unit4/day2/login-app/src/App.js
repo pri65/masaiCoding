@@ -4,7 +4,7 @@ import LoginForm from './Components/LoginForm';
 function App() {
   return (
     <div>
-    <LoginForm />
+    <LoginForm isAuth={true} />
     </div>
   )
 }
