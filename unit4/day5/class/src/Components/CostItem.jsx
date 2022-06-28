@@ -1,6 +1,6 @@
 import React from 'react'
 
-function CostItem =() => {
+function CostItem = () => {
   return (
     <div style={{
         display:'flex',
