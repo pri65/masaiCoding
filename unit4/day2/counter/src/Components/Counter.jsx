@@ -1,8 +1,10 @@
 import React from 'react'
 
-function Counter() {
+function Counter({data}) {
   return (
-    <div>Counter</div>
+    <div>
+        <h1>Count is {data} </h1>
+    </div>
   )
 }
 
