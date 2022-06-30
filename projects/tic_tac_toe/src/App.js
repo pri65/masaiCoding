@@ -1,10 +1,10 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
   return (
     <div className="app-header">
-     
+     <p className="heading-text">Tic Tac Toe</p>
     </div>
   );
 }
