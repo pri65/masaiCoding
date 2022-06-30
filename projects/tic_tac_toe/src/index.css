@@ -44,3 +44,14 @@ code {
 .jc-center {
   justify-content: center;
 }
+
+.square {
+  min-width: 100px;
+  min-height: 100px;
+  font-size: 64px;
+  text-align: center;
+  color: red;
+  font-weight: bolder;
+  padding: 30px;
+}
+
