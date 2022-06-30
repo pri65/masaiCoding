@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
 
-function SquareComponent() {
-  return (
-    <span className='square'>
-        X
-    </span>
-  )
+const SquareComponent = (props) => {
+    const classes = (props.className ? `${props.className} square` : `square`)
+    return (
+        <span
+            className={classes + (props.state === "X" ? ` fc-aqua` : ` fc-white`)}
+            onClick={() => props.onClick(props.index)}>
+           {props.state}
+        </span>
+    )
 }
-
-export default SquareComponent;
+export default SquareComponent
