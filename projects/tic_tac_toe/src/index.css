@@ -40,3 +40,7 @@ code {
   display: flex;
   flex-direction: column;
 }
+
+.jc-center {
+  justify-content: center;
+}
