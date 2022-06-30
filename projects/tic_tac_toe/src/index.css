@@ -30,3 +30,13 @@ code {
   text-align: center;
   margin: 20px;
 }
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
