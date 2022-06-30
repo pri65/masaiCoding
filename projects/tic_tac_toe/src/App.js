@@ -8,12 +8,18 @@ function App() {
      <p className="heading-text">Tic Tac Toe</p>
      <div className="row jc-center">
       <squareComponent />
+      <squareComponent />
+      <squareComponent />
      </div>
      <div className="row jc-center">
-      X
+     <squareComponent />
+      <squareComponent />
+      <squareComponent />
      </div>
      <div className="row jc-center">
-      X
+     <squareComponent />
+      <squareComponent />
+      <squareComponent />
      </div>
     </div>
   );
