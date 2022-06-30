@@ -6,8 +6,12 @@ import todoList from './Components/todoList';
 
 function App() {
   return (
-    <div className="App">
-      
+    <div >
+      <Todo />
+      <TodoItem />
+      <todoList />
+      <input type="text" placeholder='type something' />
+      <button>Add</button>
     </div>
   );
 }
