@@ -1,11 +1,8 @@
 import React from 'react'
 
 function squareComponent() {
-  return (
-    <div>
-       <span>X</span>
-    </div>
-  )
-  }
-
+ return (
+    <span style={{border: '1px solid white'}}>X</span>
+ );
+}
 export default squareComponent;
