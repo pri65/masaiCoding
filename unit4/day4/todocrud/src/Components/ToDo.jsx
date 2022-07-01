@@ -10,10 +10,11 @@ function Todo() {
   }
   const addText = () => {
     setTodo([...todo,text])
+    setText("")
   }
   return (
     <div>
-        <input onChange={(e) => handleText(e)} type="text" placeholder="write something" value="" />
+        <input onChange={(e) => handleText(e)} type="text" placeholder="write something"  value={text} />
         <button onClick={addText} >Add</button>
         <h1>{todo}</h1>
     </div>
