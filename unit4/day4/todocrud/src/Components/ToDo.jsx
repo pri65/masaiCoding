@@ -1,5 +1,7 @@
 import { useState } from "react"
 import React  from 'react'
+import AddTodo from "./AddTodo"
+import TodoList from "./TodoList"
 
 function Todo() {
   const [text, setText] = useState("")
@@ -15,8 +17,8 @@ function Todo() {
   return (
     <div>
         <input onChange={(e) => handleText(e)} type="text" placeholder="write something"  value={text} />
-        <button onClick={addText} >Add</button>
-        <h1>{todo}</h1>
+        <AddTodo addText={addText} />
+        <TodoList todo={todo}/>
     </div>
   )
 }
