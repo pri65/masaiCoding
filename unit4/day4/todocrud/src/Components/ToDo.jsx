@@ -14,11 +14,15 @@ function Todo() {
     setTodo([...todo,text])
     setText("")
   }
+  const handleDel = () => {
+    
+  }
   return (
     <div>
         <input onChange={(e) => handleText(e)} type="text" placeholder="write something"  value={text} />
         <AddTodo addText={addText} />
-        <TodoList todo={todo}/>
+        <TodoList todo={todo} delete={handleDel}/>
+        
     </div>
   )
 }
