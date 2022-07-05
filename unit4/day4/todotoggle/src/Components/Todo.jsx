@@ -15,8 +15,16 @@ function Todo() {
         ]);
     };
     const handleToggle = (id) => {
-
-    }
+const updatedData = todos.map((item) =>
+     item.id ===id
+     ? {
+        ...item,
+        status: !item.status
+     }
+     : item
+);
+setTodos(updatedData);
+    };
     console.log(todos);
    return (
     <div>

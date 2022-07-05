@@ -22,7 +22,7 @@ function TodoItem({
         <div>
             {status?"DONE":"NOT DONE"}
         </div>
-        <button>
+        <button onClick={() => handleToggle}>
             TOGGLE
         </button>
     </div>

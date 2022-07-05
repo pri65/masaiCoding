@@ -13,7 +13,8 @@ function TodoList({
                 key={item.id}
                 id={item.id}
                 title={item.title} 
-                status={item.status} 
+                status={item.status}
+                handleToggle={handleToggle} 
                 />
                 )
         }
