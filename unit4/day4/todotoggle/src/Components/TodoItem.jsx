@@ -29,4 +29,4 @@ function TodoItem({
   )
 }
 
-export default TodoItem
+export default TodoItem;

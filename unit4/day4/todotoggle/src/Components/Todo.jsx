@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import AddTodo from './AddTodo'
+import TodoList from './TodoList';
 
 function Todo() {
     const [todos, setTodos] = useState([])
@@ -13,11 +14,13 @@ function Todo() {
             }
         ]);
     };
+    console.log(todos);
    return (
     <div>
-<AddTodo handleAdd={handleAdd } />
-<div></div>
-
+        <AddTodo handleAdd={handleAdd } />
+        <div>
+            <TodoList />
+        </div>
     </div>
   )
 }
