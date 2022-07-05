@@ -3,9 +3,19 @@ import AddTodo from './AddTodo'
 
 function Todo() {
     const [todos, setTodos] = useState([])
-  return (
+  const handleAdd = (text) => {
+    setTodos([
+            ...todos,
+            {
+                id : todos.length + Date.now(),
+                title : text,
+                status : false
+            }
+        ]);
+    };
+   return (
     <div>
-<AddTodo />
+<AddTodo handleAdd={handleAdd } />
 
     </div>
   )

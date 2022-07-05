@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 
 
-function AddTodo() {
+function AddTodo({ handleAdd }) {
     const [text, setText] = useState("")
   return (
     <div>
@@ -10,7 +10,7 @@ function AddTodo() {
         value={text} 
         onChange={(e) => setText(e.target.value)}
          />
-         <button>ADD</button>
+         <button onClick={() => handleAdd(text)}>ADD</button>
     </div>
   );
 }
