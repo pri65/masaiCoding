@@ -14,12 +14,15 @@ function Todo() {
             }
         ]);
     };
+    const handleToggle = (id) => {
+
+    }
     console.log(todos);
    return (
     <div>
         <AddTodo handleAdd={handleAdd } />
         <div>
-            <TodoList />
+            <TodoList data={todos} handleToggle={handleToggle} />
         </div>
     </div>
   )
