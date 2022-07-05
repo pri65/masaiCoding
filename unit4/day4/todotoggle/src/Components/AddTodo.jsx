@@ -8,9 +8,11 @@ function AddTodo() {
         <input 
         placeholder="Add Something" 
         value={text} 
-        onChange={(e) => setText(e.target.value)} />
+        onChange={(e) => setText(e.target.value)}
+         />
+         <button>ADD</button>
     </div>
-  )
+  );
 }
 
 export default AddTodo;
