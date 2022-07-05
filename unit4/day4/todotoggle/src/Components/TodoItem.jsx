@@ -1,6 +1,11 @@
 import React from 'react'
 
-function TodoItem() {
+function TodoItem({
+    id,
+    title,
+    status,
+    handletoggle
+}) {
   return (
     <div 
     style={{ 
@@ -9,8 +14,17 @@ function TodoItem() {
     borderRadius:"1rem",
     display:"flex",
     gap:"1rem"
-    }}>
-
+    }}
+    >
+        <div>
+            {title}
+        </div>
+        <div>
+            {status?"DONE":"NOT DONE"}
+        </div>
+        <button>
+            TOGGLE
+        </button>
     </div>
   )
 }
