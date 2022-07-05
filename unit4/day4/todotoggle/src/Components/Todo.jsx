@@ -16,6 +16,7 @@ function Todo() {
    return (
     <div>
 <AddTodo handleAdd={handleAdd } />
+<div></div>
 
     </div>
   )
