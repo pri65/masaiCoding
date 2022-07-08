@@ -10,7 +10,8 @@ function LabelPrice({
         display:"flex",
         gap:"1rem"
     }}>
- TEXT
+      <div>{label}</div>
+      <div>{price}</div>
     </div>
   )
 }
