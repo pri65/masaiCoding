@@ -84,6 +84,7 @@ function CartContainer() {
         {
             //list of products
         }
+        <cartItem />
         {
            //total 
         }

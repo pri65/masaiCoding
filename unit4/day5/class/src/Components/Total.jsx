@@ -9,4 +9,4 @@ function Total() {
   )
 }
 
-export default Total
+export default Total;
