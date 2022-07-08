@@ -8,11 +8,17 @@ function Todo() {
         data=await data.json();
         console.log(data)
         setData(data);
+        alert("Success")
       }
       catch(err) {
         console.log(err)
       }
     }
+
+    useEffect(() =>{
+      alert("Making Requests")
+      getTodos()
+    },[])
     
   return (
     <div>
