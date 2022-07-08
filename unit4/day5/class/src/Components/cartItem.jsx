@@ -24,8 +24,8 @@ function cartItem({
     }}>
         <LabelPrice label={label} price={price} />
         <Quantity  qty={qty} 
-        incrementCount={()=>incrementCount(id,1)}
-        decrementCount={()=>decrementCount(id,-1)} />
+        incrementCount={()=>handleChangeQty(id,1)}
+        decrementCount={()=>handleChangeQty(id,-1)} />
     </div>
   )
 }
