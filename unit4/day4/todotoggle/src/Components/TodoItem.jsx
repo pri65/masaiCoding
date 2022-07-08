@@ -4,7 +4,7 @@ function TodoItem({
     id,
     title,
     status,
-    handletoggle
+    handleToggle
 }) {
   return (
     <div 
@@ -16,13 +16,9 @@ function TodoItem({
     gap:"1rem"
     }}
     >
-        <div>
-            {title}
-        </div>
-        <div>
-            {status?"DONE":"NOT DONE"}
-        </div>
-        <button onClick={() => handleToggle}>
+        <div>{title}</div>
+        <div>{status ? "DONE" : "NOT DONE"}</div>
+        <button onClick={() => handleToggle(id)}>
             TOGGLE
         </button>
     </div>

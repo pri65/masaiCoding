@@ -30,7 +30,9 @@ setTodos(updatedData);
     <div>
         <AddTodo handleAdd={handleAdd } />
         <div>
-            <TodoList data={todos} handleToggle={handleToggle} />
+            <TodoList data={todos.filter(item=>item.status)} 
+            handleToggle={handleToggle}
+             />
         </div>
     </div>
   )

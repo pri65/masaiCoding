@@ -1,4 +1,5 @@
 import React from 'react'
+import TodoItem from './TodoItem';
 
 function TodoList({
     data,
@@ -7,7 +8,7 @@ function TodoList({
   return (
     <div>
         {
-            data.map(item=>
+            data.map((item)=> (
                 <TodoItem 
                 //key is for react,it does not get passed down as a prop
                 key={item.id}
@@ -17,6 +18,7 @@ function TodoList({
                 handleToggle={handleToggle} 
                 />
                 )
+            )
         }
     </div>
   )
