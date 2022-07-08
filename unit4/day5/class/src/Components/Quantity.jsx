@@ -1,7 +1,10 @@
 import React from 'react'
 import Button from './Button'
 
-function Quantity() {
+function Quantity({
+  qty,
+  decrementCount
+}) {
   return (
     <div 
     style={{
@@ -9,6 +12,9 @@ function Quantity() {
         gap:"1rem"
     }}>
       <button>-</button>
+      <div>
+        <h4>{}</h4>
+      </div>
       <button>+</button>
  </div>
   )
