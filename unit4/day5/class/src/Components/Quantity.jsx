@@ -12,13 +12,13 @@ function Quantity({
         display:"flex",
         gap:"1rem"
     }}>
-      <button onClick={decrementCount}>-</button>
+      <Button disabled={qty===0} onClick={decrementCount}>-</Button>
       <div>
         <h4>{qty}</h4>
       </div>
-      <button onClick={incrementCount}>+</button>
+      <Button onClick={incrementCount}>+</Button>
  </div>
   )
 }
 
-export default Quantity
+export default Quantity;
