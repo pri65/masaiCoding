@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from './Button'
 
 function Quantity() {
   return (
@@ -7,6 +8,8 @@ function Quantity() {
         display:"flex",
         gap:"1rem"
     }}>
+      <button>-</button>
+      <button>+</button>
  </div>
   )
 }
