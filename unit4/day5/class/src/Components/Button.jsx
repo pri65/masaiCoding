@@ -1,8 +1,16 @@
 import React from 'react'
 
-function Button() {
+function Button({
+onClick,
+children,
+disabled
+}) {
   return (
-    <div>Button</div>
+    <button style={{
+      padding:"1rem",
+    }} disabled={disabled} onClick={onClick}>
+      {children}
+    </button>
   )
 }
 

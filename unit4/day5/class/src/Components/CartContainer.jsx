@@ -85,7 +85,7 @@ function CartContainer() {
             //list of products
         }
         {
-            
+           //total 
         }
     </div>
   )
