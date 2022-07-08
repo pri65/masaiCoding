@@ -6,6 +6,7 @@ function cartItem({
   label,
   price,
   qty,
+  id,
   handleChangeQty
 }) {
   return (
@@ -18,7 +19,7 @@ function cartItem({
       alignItems:"center"
     }}>
         <LabelPrice label={label} price={price} />
-        <Quantity qty={qty} />
+        <Quantity id={id} qty={qty} changeCount={handleChangeQty} />
     </div>
   )
 }
