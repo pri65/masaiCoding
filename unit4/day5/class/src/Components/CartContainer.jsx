@@ -50,7 +50,7 @@ function CartContainer() {
                 setData(updatedData)
             }
   return (
-    <div>
+    <div style={{border:"1px solid tomato"}}>
         {
             data.map(item =>
                 <CartItem

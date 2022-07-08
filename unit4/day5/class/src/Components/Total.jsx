@@ -4,7 +4,7 @@ function Total({
   total
 }) {
   return (
-    <div>
+    <div style={{border:"1px solid tomato", padding:"1rem"}}>
         Total:{total}
     </div>
   )

@@ -10,7 +10,8 @@ function Quantity({
     <div 
     style={{
         display:"flex",
-        gap:"1rem"
+        gap:"1rem",
+        border:"1px solid tomato"
     }}>
       <Button disabled={qty===0} onClick={decrementCount}>-</Button>
       <div>

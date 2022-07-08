@@ -7,8 +7,9 @@ function cartItem({
   price,
   qty,
   id,
- incrementCount,
- decrementCount
+  handleChangeQty
+//  incrementCount,
+//  decrementCount
 }) {
   return (
     <div 
@@ -17,7 +18,9 @@ function cartItem({
       gap:"1rem",
       padding:"2rem",
       justifyContent:"center",
-      alignItems:"center"
+      alignItems:"center",
+      border:"1px solid tomato",
+      margin:"0.5rem"
     }}>
         <LabelPrice label={label} price={price} />
         <Quantity  qty={qty} 
