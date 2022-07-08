@@ -86,7 +86,9 @@ function CartContainer() {
                 <CartItem
                 key={item.id}
                 label={item.product_name}
-                price={item.price} />
+                price={item.price} 
+                handleChangeQty={handleChangeQty}
+                />
                 )
         }
         <Total total={calculateTotal(data)} />

@@ -2,7 +2,12 @@ import React from 'react'
 import LabelPrice from './LabelPrice'
 import Quantity from './Quantity'
 
-function cartItem() {
+function cartItem({
+  label,
+  price,
+  qty,
+  handleChangeQty
+}) {
   return (
     <div 
     style={{
@@ -12,8 +17,8 @@ function cartItem() {
       justifyContent:"center",
       alignItems:"center"
     }}>
-        <LabelPrice label="label" price="100" />
-        <Quantity qty="1" />
+        <LabelPrice label={label} price={price} />
+        <Quantity qty={qty} />
     </div>
   )
 }
