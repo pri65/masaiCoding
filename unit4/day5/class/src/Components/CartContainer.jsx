@@ -1,28 +1,8 @@
 import React from 'react'
 import {useState} from "react";
-import cartItem from './cartItem';
+import CartItem from './CartItem';
 import Total from './Total';
 
-// const initData = [
-//     {
-//         id:1,
-//         product_name:"Noodles",
-//         price:30,
-//         qty:1
-//     },
-//     {
-//         id:2,
-//         product_name:"Biryani",
-//         price:90,
-//         qty:2
-//     },
-//     {
-//         id:3,
-//         product_name:"Chips",
-//         price:10,
-//         qty:3
-//     }
-// ]
 
 // function calculateTotal(products) {
 //     return products,reduce((acc,c) =>
@@ -30,7 +10,7 @@ import Total from './Total';
 // }
 
 // function CartContainer() {
-//     const [data, setData] = useState(initData)
+//     
 //     //data
 //     //event handlers
 //     const handleChangeQty = (id,amount) => {
@@ -71,11 +51,29 @@ import Total from './Total';
 
 
 
-
+const initData = [
+        {
+            id:1,
+            product_name:"Noodles",
+            price:30,
+            qty:1
+        },
+        {
+            id:2,
+            product_name:"Biryani",
+            price:90,
+            qty:2
+        },
+        {
+            id:3,
+            product_name:"Chips",
+            price:10,
+            qty:3
+        }
+    ]
 
 function CartContainer() {
-    //data
-    //event handlers
+    const [data, setData] = useState(initData)
   return (
     <div>
         {
@@ -84,13 +82,21 @@ function CartContainer() {
         {
             //list of products
         }
-        <cartItem />
-        <cartItem />
-        <cartItem />
+        {
+            data.map(item =>
+                <CartItem
+                key={item.id}
+                label={item.product_name}
+                price={item.price} />
+                )
+        }
+        <CartItem />
+        <CartItem />
+        <CartItem />
         {
            //total 
         }
-        <Total />
+        <Total total={100} />
     </div>
   )
 }

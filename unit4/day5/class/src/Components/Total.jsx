@@ -1,7 +1,8 @@
 import React from 'react'
 
-function Total() {
-    total
+function Total({
+  total
+}) {
   return (
     <div>
         Total:{total}
