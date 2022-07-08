@@ -74,8 +74,20 @@ import Total from './Total';
 
 
 function CartContainer() {
+    //data
+    //event handlers
   return (
-    <div>CartContainer</div>
+    <div>
+        {
+            //body
+        }
+        {
+            //list of products
+        }
+        {
+            
+        }
+    </div>
   )
 }
 
