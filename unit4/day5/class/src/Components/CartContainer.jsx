@@ -85,9 +85,12 @@ function CartContainer() {
             //list of products
         }
         <cartItem />
+        <cartItem />
+        <cartItem />
         {
            //total 
         }
+        <Total />
     </div>
   )
 }
