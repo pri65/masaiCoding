@@ -4,10 +4,7 @@ import CartItem from './CartItem';
 import Total from './Total';
 
 
-// function calculateTotal(products) {
-//     return products,reduce((acc,c) =>
-//     acc + (c.qty + c.price), 0)
-// }
+
 
 // function CartContainer() {
 //     
@@ -71,6 +68,10 @@ const initData = [
             qty:3
         }
     ]
+    function calculateTotal(products) {
+    return products.reduce((acc,c) =>
+    acc + (c.qty * c.price), 0)
+}
 
 function CartContainer() {
     const [data, setData] = useState(initData)
@@ -90,13 +91,10 @@ function CartContainer() {
                 price={item.price} />
                 )
         }
-        <CartItem />
-        <CartItem />
-        <CartItem />
         {
            //total 
         }
-        <Total total={100} />
+        <Total total={calculateTotal(data)} />
     </div>
   )
 }
