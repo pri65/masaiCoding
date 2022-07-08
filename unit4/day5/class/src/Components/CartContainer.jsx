@@ -10,20 +10,7 @@ import Total from './Total';
 //     
 //     //data
 //     //event handlers
-//     const handleChangeQty = (id,amount) => {
-//         let updateData = data.map(item => {
-//             if(item,id === id) {
-//                 //override
-//                 return {
-//                     ...item,
-//                     qty: item.qty + amount
-//                 }
-//             }
-//             else {
-//                 return item
-//             }
-//         })
-//         setData(updateData)
+//    
 //     }
 //   return (
 //     <div>
@@ -70,19 +57,30 @@ const initData = [
     ]
     function calculateTotal(products) {
     return products.reduce((acc,c) =>
+    // accumulator
+    // current value
     acc + (c.qty * c.price), 0)
 }
 
 function CartContainer() {
     const [data, setData] = useState(initData)
+    const handleChangeQty = (id,amount) => {
+                let updatedData = data.map(item => {
+                    if(item.id === id) {
+                        //override
+                        return {
+                            ...item,
+                            qty: item.qty + amount
+                        }
+                    }
+                    else {
+                        return item
+                    }
+                })
+                setData(updatedData)
+            }
   return (
     <div>
-        {
-            //body
-        }
-        {
-            //list of products
-        }
         {
             data.map(item =>
                 <CartItem
@@ -90,9 +88,6 @@ function CartContainer() {
                 label={item.product_name}
                 price={item.price} />
                 )
-        }
-        {
-           //total 
         }
         <Total total={calculateTotal(data)} />
     </div>
