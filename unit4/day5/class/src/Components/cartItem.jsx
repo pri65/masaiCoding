@@ -4,9 +4,13 @@ import Quantity from './Quantity'
 
 function cartItem() {
   return (
-    <div>
-        <LabelPrice />
-        <Quantity />
+    <div 
+    style={{
+      display:"flex",
+      gap:"1rem"
+    }}>
+        <LabelPrice label="label" price="100" />
+        <Quantity qty="1" />
     </div>
   )
 }
