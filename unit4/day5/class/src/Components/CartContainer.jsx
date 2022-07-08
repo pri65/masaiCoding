@@ -95,4 +95,4 @@ function CartContainer() {
   )
 }
 
-export default CartContainer
+export default CartContainer;
