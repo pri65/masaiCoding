@@ -10,9 +10,9 @@ function LabelPrice({
         display:"flex",
         gap:"1rem"
     }}>
- 
+ TEXT
     </div>
   )
 }
 
-export default LabelPrice
+export default LabelPrice;
