@@ -3,8 +3,8 @@ import Button from './Button'
 
 function Quantity({
   qty,
-  changeCount,
-  id
+  decrementCount,
+  incrementCount
 }) {
   return (
     <div 
@@ -12,11 +12,11 @@ function Quantity({
         display:"flex",
         gap:"1rem"
     }}>
-      <button onClick={()=>changeCount(id,-1)}>-</button>
+      <button onClick={decrementCount}>-</button>
       <div>
         <h4>{qty}</h4>
       </div>
-      <button onClick={()=>changeCount(id,+1)}>+</button>
+      <button onClick={incrementCount}>+</button>
  </div>
   )
 }

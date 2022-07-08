@@ -86,6 +86,7 @@ function CartContainer() {
                 <CartItem
                 key={item.id}
                 label={item.product_name}
+                qty={item.qty}
                 price={item.price} 
                 handleChangeQty={handleChangeQty}
                 />
