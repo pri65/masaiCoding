@@ -5,36 +5,6 @@ import Total from './Total';
 
 
 
-
-// function CartContainer() {
-//     
-//     //data
-//     //event handlers
-//    
-//     }
-//   return (
-//     <div>
-//     {
-//         data.map(item =>
-//             <CartItem
-//             key={item.id}
-//             id={item.id}
-//             label={item.product_name}
-//             qty={item.qty}
-//             price={item.price}
-//             handleChangeQty={handleChangeQty}
-//             />
-//             )
-//     }
-//     <Total total={calculateTotal(data)}/>
-//     </div>
-//   )
-// }
-
-// export default CartContainer
-
-
-
 const initData = [
         {
             id:1,
@@ -85,6 +55,7 @@ function CartContainer() {
             data.map(item =>
                 <CartItem
                 key={item.id}
+                id={item.id}
                 label={item.product_name}
                 qty={item.qty}
                 price={item.price} 
