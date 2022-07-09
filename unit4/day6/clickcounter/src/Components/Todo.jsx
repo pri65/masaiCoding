@@ -8,7 +8,6 @@ function Todo() {
         data=await data.json();
         console.log(data)
         setData(data);
-        alert("Success")
       }
       catch(err) {
         console.log(err)
@@ -16,7 +15,6 @@ function Todo() {
     }
 
     useEffect(() =>{
-      alert("Making Requests")
       getTodos()
     },[])
     
