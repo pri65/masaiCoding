@@ -3,21 +3,27 @@ import { useState,useEffect } from "react";
 function TodoWithPAgination(){
     const [data,setData]=useState([]);
     const [page,setPage]=useState(1);
-    const getTodods = async (page=1) => {
+    const [loading, setLoading] = useState(false)
+
+    const getTodods = async (p=1) => {
+        //here p is stands for page for the local server or its just a parameter
         try{
-            let data=await fetch(`https://jsonplaceholder.typicode.com/todos?_page=${page}&_limit=10`)
+            setLoading(true);
+            let data=await fetch(`https://jsonplaceholder.typicode.com/todos?_page=${p}&_limit=10`)
             data=await data.json();
             console.log(data)
             setData(data);
+            setLoading(false);
         }
         catch(err){
+            setLoading(false)
             console.log(err);
         }
     }
 
     useEffect(()=>{
-        getTodods()
-    },[])
+        getTodods(page)
+    },[page])
 
     
     return (
@@ -26,6 +32,9 @@ function TodoWithPAgination(){
             <button onClick={()=>setPage(page=>page-1)} disabled={page===1}>PREV</button>
             <span style={{padding:"0.5rem"}}>{page}</span>
             <button onClick={()=>setPage(page=>page+1)}>NEXT</button>
+            <div>
+                {loading && <h3>Loading</h3>}
+            </div>
             <div>
               {
                 data.map(todo=>
