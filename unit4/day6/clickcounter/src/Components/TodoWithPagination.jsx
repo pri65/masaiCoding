@@ -3,9 +3,9 @@ import { useState,useEffect } from "react";
 function TodoWithPAgination(){
     const [data,setData]=useState([]);
     const [page,setPage]=useState(1);
-    const getTodods = async () => {
+    const getTodods = async (page=1) => {
         try{
-            let data=await fetch(`https://jsonplaceholder.typicode.com/todos?_page=1&_limit=10`)
+            let data=await fetch(`https://jsonplaceholder.typicode.com/todos?_page=${page}&_limit=10`)
             data=await data.json();
             console.log(data)
             setData(data);
