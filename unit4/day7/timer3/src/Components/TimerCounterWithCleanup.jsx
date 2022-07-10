@@ -1,5 +1,5 @@
 import React from 'react'
-import { useEffect } from 'react';
+import { useEffect,useState } from 'react';
 
 function TimerCounterWithCleanup() {
   const [count,setCount]=useState(0);
@@ -12,10 +12,17 @@ function TimerCounterWithCleanup() {
         },1000);
       
         const cleanup = () => {
-            clearInterval(id);
+            console.log(`component is unmounting`)            clearInterval(id);
         };
         return cleanup;
-    },[])
+    },[]);
+
+    return (
+        <div className='App'>
+            <h1>Counter:{count}</h1>
+            <h3>Update every second</h3>
+        </div>
+    )
 }
 
 export default TimerCounterWithCleanup;
