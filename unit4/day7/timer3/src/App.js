@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import TimerCountSetTimeout from './Components/TimerCountSetTimeout';
+import TimerCounterWithCleanup from './Components/TimerCounterWithCleanup';
 
 function App() {
   return (
     <div className="App">
-      <TimerCountSetTimeout />
+      <TimerCounterWithCleanup />
     </div>
   );
 }
