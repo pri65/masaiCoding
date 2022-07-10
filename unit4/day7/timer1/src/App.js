@@ -2,6 +2,7 @@
 import { useEffect } from 'react';
 import { useState } from 'react';
 import './App.css';
+import TimerCounter from './Components/TimerCounter';
 import TimerCountSetTimeout from './Components/TimerCountSetTimeout';
 
 
@@ -22,7 +23,8 @@ function App() {
   // },[count]);
   return (
     <div className="App">
-      <TimerCountSetTimeout />
+      {/* <TimerCountSetTimeout /> */}
+      <TimerCounter />
     </div>
   );
 }
