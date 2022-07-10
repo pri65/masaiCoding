@@ -5,7 +5,7 @@ function TimerCounterWithCleanup() {
   const [count,setCount]=useState(0);
 
     useEffect(() => {
-        console.log(`useEffect first`);
+        console.log(`component is unmounting`);
         const id=setInterval(() => {
             console.log(`setInterval`, Date.now());
             setCount((prev) => prev+1);
@@ -22,6 +22,7 @@ function TimerCounterWithCleanup() {
         <div className='App'>
             <h1>Counter:{count}</h1>
             <h3>Update every second</h3>
+
         </div>
     )
 }
