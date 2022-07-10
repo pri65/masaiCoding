@@ -12,7 +12,8 @@ function TimerCounterWithCleanup() {
         },1000);
       
         const cleanup = () => {
-            console.log(`component is unmounting`)            clearInterval(id);
+            console.log(`component is unmounting`)           
+             clearInterval(id);
         };
         return cleanup;
     },[]);
