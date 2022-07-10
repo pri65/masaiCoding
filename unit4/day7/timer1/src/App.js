@@ -2,12 +2,14 @@
 import { useEffect } from 'react';
 import { useState } from 'react';
 import './App.css';
-import "./styles.css"
+
 
 function App() {
   const [count,setCount] = useState(0);
 
   const startTimer = () => {
+    //setInterval(callback,timedelay)
+    //it is a global scope
     setInterval(() => {
       console.log(`value is ${count}`)
       setCount(count+1);
@@ -16,7 +18,7 @@ function App() {
 
   useEffect(() => {
     startTimer();
-  },[]);
+  },[count]);
   return (
     <div className="App">
       <h1>Counter:{count}</h1>
