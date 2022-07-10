@@ -1,5 +1,5 @@
 import React from 'react'
-import { useEffect } from 'react';
+import { useEffect,useState } from 'react';
 
 function TimerCountSetTimeout() {
     const [count,setCount] = useState(0);
@@ -8,7 +8,7 @@ function TimerCountSetTimeout() {
         setTimeout(() => {
              setCount(count+1);   
         },1000)
-    },[]);
+    },[count]);
   return (
     <div>
         <h1>Counter:{count}</h1>
