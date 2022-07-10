@@ -8,11 +8,11 @@ function App() {
   const [count,setCount] = useState(0);
 
   const startTimer = () => {
-    //setInterval(callback,timedelay)
+    //setInterval(callback,timeDelay)
     //it is a global scope
     setInterval(() => {
       console.log(`value is ${count}`)
-      setCount(count+1);
+      setCount((prev) => prev+1);
     },1000);
   };
 
