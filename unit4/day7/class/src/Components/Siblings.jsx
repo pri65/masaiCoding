@@ -14,7 +14,7 @@ const Button=({handleClick,label}) => (
 
 function Siblings() {
     const [count,setCount] = React.useState(50);
-   const handleChange = {value} => {
+   const handleChange = (value) => {
     setCount(count+value);
    };
    return (
