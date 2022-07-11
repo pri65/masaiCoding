@@ -7,7 +7,7 @@ function App() {
   const [show,setShow]=useState(true);
   return (
     <div className="App">
-      <TimerCounterWithCleanup />
+      
       {show && <TimerCounterWithCleanup />}
       <button onClick={() => setShow(!show)}>TOGGLE</button>
     </div>
