@@ -17,13 +17,17 @@ function App() {
       const{name,value} =e.target;
       setData({...data,[name]:value});
     };
+
+    const handleClick = () => {
+      console.log(data);
+    };
     const {name,gender,role,maritalStatus} = data;
   return (
     <div className="App">
       <h1>Form</h1>
       <input value={name} name="name" onChange={handleChange} />
       <br />
-      <button onClick={() => console.log(data)}>CLICK</button>
+      <button onClick={handleClick}>CLICK</button>
     </div>
   );
 }
