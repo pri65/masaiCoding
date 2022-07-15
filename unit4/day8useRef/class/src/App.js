@@ -13,7 +13,12 @@ setIsLoading(false)
   }
 
   const fetchDataWithError = () => {
+setIsLoading(true);
 
+setTimeout(() => {
+setIsLoading(false)
+setIsError(true);
+},2000)
   }
 
   if(isLoading) {
@@ -35,6 +40,7 @@ setIsLoading(false)
     <div className="App">
       <h1>Hello</h1>
       <button onClick={fetchData}>FETCH DATA</button>
+      <button onClick={fetchDataWithError}>FETCH DATA WITH ERROR</button>
     </div>
   );
 }
