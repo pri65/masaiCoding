@@ -6,6 +6,13 @@ function App() {
   const [isError, setIsError] = useState(false)
   
   const fetchData = () => {
+    setIsLoading(true)
+    setTimeout( () => {
+setIsLoading(false)
+    },2000)
+  }
+
+  const fetchDataWithError = () => {
 
   }
 
@@ -27,7 +34,7 @@ function App() {
   return (
     <div className="App">
       <h1>Hello</h1>
-      <button>FETCH DATA</button>
+      <button onClick={fetchData}>FETCH DATA</button>
     </div>
   );
 }
