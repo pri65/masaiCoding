@@ -38,9 +38,14 @@ setIsError(true);
       <h1>Hello</h1>
       <button onClick={fetchData}>FETCH DATA</button>
       <br />
+      <br />
       <button onClick={fetchDataWithError}>FETCH DATA WITH ERROR</button>
       <br />
-      <button>TOGGLE SHOWING DATE</button>
+      <br />
+      <button onClick={() => setShow((prev) => !prev)}>TOGGLE SHOWING DATE</button>
+      {
+        
+      }
     </div>
   );
 }
