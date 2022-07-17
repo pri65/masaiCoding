@@ -4,7 +4,8 @@ import './App.css';
 function App() {
   const [isLoading, setIsLoading] = useState(false)
   const [isError, setIsError] = useState(false)
-  
+  const [show , setShow] = useState(false);
+
   const fetchData = () => {
     setIsLoading(true)
     setIsError(false);
