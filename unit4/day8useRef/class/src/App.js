@@ -32,7 +32,7 @@ setIsError(true);
     return (
       <div className='App'>
         <h1>Something Went Wrong</h1>
-        <button>do you want to fetch data again?</button>
+        <button onClick={fetchData}>do you want to fetch data again?</button>
       </div>
     )
   }
