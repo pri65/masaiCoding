@@ -19,24 +19,24 @@ return (
       <h1>Form:Persons Details</h1>
       <form onSubmit={() => {}}>
         <label>Name
-          <input type="text" name="name" value={name} />
+          <input onChange={handleChange} type="text" name="name" value={name} />
         </label>
         <br />
         <br />
         <label>Email
-          <input type="email" name="email" value={email} />
+          <input onChange={handleChange} type="email" name="email" value={email} />
         </label>
         <br />
         <br />
         <label>Married
-          <input type="checkbox" name="isMarried" value={isMarried} />
+          <input onChange={handleChange} type="checkbox" name="isMarried" value={isMarried} />
         </label>
         <br />
         <br />
-        <select>
-          <option value="M">M</option>
-          <option value="F">F</option>
-          <option value="F">Do not want to disclose</option>
+        <select name="gender" value={gender} onChange={handleChange}>
+          <option value="M">Male</option>
+          <option value="F">Female</option>
+          <option value="D">Do not want to disclose</option>
         </select>
         <br />
         <br />
