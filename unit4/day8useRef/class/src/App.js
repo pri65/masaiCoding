@@ -23,23 +23,16 @@ setIsError(true);
 },2000)
   }
 
-  if(isLoading) {
-    return (
+    return isLoading ?  (
       <div className='App'>
         <h1>...Loading</h1>
       </div>
-    )
-  }
-  if(isError) {
-    return (
+    ) : isError ? (
       <div className='App'>
         <h1>Something Went Wrong</h1>
         <button onClick={fetchData}>do you want to fetch data again?</button>
       </div>
-    )
-  }
-  
-  return (
+    ) : (
     <div className="App">
       <h1>Hello</h1>
       <button onClick={fetchData}>FETCH DATA</button>
