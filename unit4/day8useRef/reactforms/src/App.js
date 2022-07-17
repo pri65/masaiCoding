@@ -12,10 +12,18 @@ const initState={
 
 function App() {
 const [formData, setFormData] = useState(initState);
+const fileRef=React.useRef();
 
 const handleChange = e => {
-  const{name,value}=e.target;
+  let {name,value,check,type}=e.target;
+  value=type === "checkbox" ? checked:value;
+  
   setFormData((prev) => ({...prev, [name]:value}))
+}
+
+const onSubmit = () => {
+  console.log(formData);
+  console.log(fileRef);
 }
 
  const {name,isMarried,country,gender,email}=formData; 
@@ -35,7 +43,7 @@ return (
         <br />
         <br />
         <label>Married
-          <input onChange={handleChange} type="checkbox" name="isMarried" value={isMarried} />
+          <input onChange={handleChange} type="checkbox" name="isMarried" checked={isMarried} />
         </label>
         <br />
         <br />
@@ -46,9 +54,8 @@ return (
         </select>
         <br />
         <br />
-        <label>Name
-          <input type="text" name="name" value={name} />
-        </label>
+          <input type="file" ref={fileRef}  />
+      
       </form>
     </div>
   );
