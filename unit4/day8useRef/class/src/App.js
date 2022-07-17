@@ -43,9 +43,8 @@ setIsError(true);
       <br />
       <br />
       <button onClick={() => setShow((prev) => !prev)}>TOGGLE SHOWING DATE</button>
-      {
-        
-      }
+      {  show && new Date().toLocaleString()}
+      
     </div>
   );
 }
