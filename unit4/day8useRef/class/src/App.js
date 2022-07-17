@@ -37,8 +37,10 @@ setIsError(true);
     <div className="App">
       <h1>Hello</h1>
       <button onClick={fetchData}>FETCH DATA</button>
+      <br />
       <button onClick={fetchDataWithError}>FETCH DATA WITH ERROR</button>
-      <button>TOGGLE SHOWING CLOCK</button>
+      <br />
+      <button>TOGGLE SHOWING DATE</button>
     </div>
   );
 }
