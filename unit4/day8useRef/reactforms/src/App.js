@@ -5,7 +5,6 @@ import './App.css';
 const initState={
   name:"",
   isMarried:"",
-  country:"",
   gender:"",
   email:""
 }
@@ -14,16 +13,16 @@ function App() {
 const [formData, setFormData] = useState(initState);
 const fileRef=React.useRef();
 
-const handleChange = e => {
+const handleChange = (e) => {
   let {name,value,check,type}=e.target;
   value=type === "checkbox" ? checked:value;
-  
   setFormData((prev) => ({...prev, [name]:value}))
 }
 
 const onSubmit = () => {
+  e.preventDefault()
   console.log(formData);
-  console.log(fileRef);
+  console.log(fileRef.current.files[0].name);
 }
 
  const {name,isMarried,country,gender,email}=formData; 
@@ -55,7 +54,9 @@ return (
         <br />
         <br />
           <input type="file" ref={fileRef}  />
-      
+      <br />
+      <br />
+      <input type="submit" />
       </form>
     </div>
   );
