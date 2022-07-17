@@ -2,7 +2,7 @@ import React, {useRef,useEffect} from "react";
 import './App.css';
 
 function App() {
-  const ref=React.useRef;
+  const ref=React.useRef();
 
   React.useEffect(() => {}, []);
 
