@@ -38,6 +38,7 @@ setIsError(true);
       <h1>Hello</h1>
       <button onClick={fetchData}>FETCH DATA</button>
       <button onClick={fetchDataWithError}>FETCH DATA WITH ERROR</button>
+      <button>TOGGLE SHOWING CLOCK</button>
     </div>
   );
 }
