@@ -12,6 +12,12 @@ const initState={
 
 function App() {
 const [formData, setFormData] = useState(initState);
+
+const handleChange = e => {
+  const{name,value}=e.target;
+  setFormData((prev) => ({...prev, [name]:value}))
+}
+
  const {name,isMarried,country,gender,email}=formData; 
 
 return (
