@@ -34,7 +34,7 @@ const [data, setData] = useState([]);
       <RestaurantCard />
       {
         data.map(res=>
-          <RestaurantCard data={res} />
+          <RestaurantCard  key={res.id} data={res} />
           )
       }
     </div>
