@@ -7,6 +7,7 @@ function App() {
   
   const fetchData = () => {
     setIsLoading(true)
+    setIsError(false);
     setTimeout( () => {
 setIsLoading(false)
     },2000)
@@ -14,6 +15,7 @@ setIsLoading(false)
 
   const fetchDataWithError = () => {
 setIsLoading(true);
+setIsError(false);
 
 setTimeout(() => {
 setIsLoading(false)
