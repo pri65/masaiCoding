@@ -11,11 +11,11 @@ const [data, setData] = useState([]);
   function getRestaurants(){
     setLoading(true);
     setError(false)
-    return fetch({
-      url:"https://62c011a3c134cf51cec88cec.mockapi.io/restaurants/list"
-    })
+    return fetch("https://62c011a3c134cf51cec88cec.mockapi.io/restaurants/list")
     .then((res) => res.json())
     .then((res) => {
+      console.log(res);
+      alert("");
       setLoading(false);
       setData(res);
     })
@@ -25,8 +25,8 @@ const [data, setData] = useState([]);
     })
   }
 
-  useEffect(() => {getRestaurants():Promise<void>
-  getRestaurants();
+  useEffect(() => {
+    getRestaurants();
   },[]);
   return (
     <div className="App">
