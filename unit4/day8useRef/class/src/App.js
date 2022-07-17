@@ -1,10 +1,14 @@
 import React, {useState} from 'react';
 import './App.css';
 
-function App() {
+function App({ hidden }) {
   const [isLoading, setIsLoading] = useState(false)
   const [isError, setIsError] = useState(false)
   const [show , setShow] = useState(false);
+
+  if(hidden) {
+    return null;
+  }
 
   const fetchData = () => {
     setIsLoading(true)
@@ -42,7 +46,9 @@ setIsError(true);
       <button onClick={fetchDataWithError}>FETCH DATA WITH ERROR</button>
       <br />
       <br />
-      <button onClick={() => setShow((prev) => !prev)}>TOGGLE SHOWING DATE</button>
+      <button onClick={() => setShow((prev) => !prev)}>
+        {show ? "HIDE" : "SHOW"}
+      </button>
       <br />
       {show ? new Date().toLocaleString() : "DATE HIDDEN"}
        </div>
