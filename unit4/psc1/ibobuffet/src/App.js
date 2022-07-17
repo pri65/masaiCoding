@@ -32,6 +32,11 @@ const [data, setData] = useState([]);
     <div className="App">
       <img src="https://i.imgur.com/lMeVwr7.png" />
       <RestaurantCard />
+      {
+        data.map(res=>
+          <RestaurantCard data={res} />
+          )
+      }
     </div>
   );
 }
