@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React,{useState,useEffect} from "react";
 import './App.css';
 import RestaurantCard from "./Components/RestaurantCard";
 
@@ -19,11 +19,15 @@ const [data, setData] = useState([]);
       setLoading(false);
       setData(res);
     })
-    .then(err=>{
+    .catch(err=>{
       setLoading(false);
       setError(true)
     })
   }
+
+  useEffect(() => {getRestaurants():Promise<void>
+  getRestaurants();
+  },[]);
   return (
     <div className="App">
       <img src="https://i.imgur.com/lMeVwr7.png" />
