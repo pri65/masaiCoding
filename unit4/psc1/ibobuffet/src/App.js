@@ -10,6 +10,7 @@ const [data, setData] = useState([]);
 
   function getRestaurants(){
     setLoading(true);
+    setError(false)
     return fetch({
       url:"https://62c011a3c134cf51cec88cec.mockapi.io/restaurants/list"
     })
@@ -17,7 +18,11 @@ const [data, setData] = useState([]);
     .then((res) => {
       setLoading(false);
       setData(res);
-    });
+    })
+    .then(err=>{
+      setLoading(false);
+      setError(true)
+    })
   }
   return (
     <div className="App">
