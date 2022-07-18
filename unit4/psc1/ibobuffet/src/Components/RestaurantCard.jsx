@@ -7,7 +7,8 @@ import styles from "./RestaurantCard.module.css";
 
 
 
-function RestaurantCard() {
+function RestaurantCard({data}) {
+    const { name,id,cuisine,costForTwo,minOrder,deliveryTime} = data
     console.log(styles);
   return (
     <div>
@@ -21,7 +22,7 @@ function RestaurantCard() {
     </div>
     <div style={{ flex:3 }} >
         <DetailsComponents
-        
+
     </div>
 </div>
 <div className={styles.footer}></div>
