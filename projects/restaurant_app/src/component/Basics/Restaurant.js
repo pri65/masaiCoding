@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./style.css";
-import Menu from "./MenuApi";
+import Menu from "./MenuApi.js";
 import MenuCard from "./MenuCard";
 import Navbar from "./Navbar";
 

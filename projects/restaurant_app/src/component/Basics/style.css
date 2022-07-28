@@ -146,7 +146,7 @@
   }
   
   @media (max-width: 998px) {
-    .main-card--cointainer {
+    .main-card--container {
       display: grid;
       grid-template-columns: repeat(1, minmax(200px, 500px));
       grid-gap: 50px;
