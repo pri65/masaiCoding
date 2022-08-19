@@ -1,8 +1,8 @@
-# Portfolio
+  # Portfolio
 
 > My portfolio
 
-![screenshot](./app_screenshot.png)
+![screenshot]()
 
 Project description.
 
@@ -13,7 +13,7 @@ Project description.
 
 ## Live Demo
 
-[Live Demo Link](https://manezeu-patricia.netlify.app/)
+[Live Demo Link](https://priyanakasoni.netlify.app/)
 
 
 ## Getting Started
@@ -56,11 +56,10 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 Manezeu Patricia Chrystelle
+👤 Priyanka Soni
 
-- Github: [@githubhandle](https://github.com/patriciachrysy)
-- Twitter: [@twitterhandle](https://twitter.com/ManezeuP)
-- Linkedin: [linkedin](https://www.linkedin.com/in/manezeu-patricia-chrystelle/)
+- Github: [@githubhandle](https://github.com/pri65)
+- Linkedin: [linkedin](https://www.linkedin.com/in/priyanka-soni-836a121b7/)
 
 ## 🤝 Contributing
 
