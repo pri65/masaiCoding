@@ -8,4 +8,4 @@ contact book
 search -> friend A -> dial -> 9999999999
 
 
-//middleware
+//middleware - calculates time taken for the overall req, res
