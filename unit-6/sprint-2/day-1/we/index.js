@@ -10,6 +10,7 @@ app.use((req,res,next) => {
     next() //after this execution is done
     //end time
   const endTime = new Date().getTime();
+  console.log(endTime-startTime + "ms")
     //time taken = end time- start time
 })
 
@@ -22,7 +23,7 @@ app.get("/about", (req,res) => {
 })
 
 app.get("/contact", (req,res) => {
-    console.log("1")
+    const file = fs.readFileSync("./package.json", {encoding:"utf-8"})
     res.send("contact details are here")
 })
 
