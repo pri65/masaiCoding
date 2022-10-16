@@ -5,9 +5,11 @@ const app = express()
 
 //function -> which has access to request object, response object and next() 
 app.use((req,res,next) => {
-    console.log("a")
+    //start time
     next() //after this execution is done
-    console.log("z")
+    //end time
+
+    //time taken = end time- start time
 })
 
 app.get("/", (req,res) => {
