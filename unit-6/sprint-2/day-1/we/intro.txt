@@ -1,0 +1,8 @@
+## DNS => Domain name system
+
+server-computer
+masaischool.comm -> some server -> ip address
+google.com -> some server -> ip address
+
+contact book
+search -> friend A -> dial -> 9999999999
