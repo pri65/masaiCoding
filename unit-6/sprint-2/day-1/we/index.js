@@ -6,9 +6,10 @@ const app = express()
 //function -> which has access to request object, response object and next() 
 app.use((req,res,next) => {
     //start time
+    const startTime = new Date().getTime();
     next() //after this execution is done
     //end time
-
+  const endTime = new Date().getTime();
     //time taken = end time- start time
 })
 
