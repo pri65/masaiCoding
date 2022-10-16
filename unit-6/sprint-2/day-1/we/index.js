@@ -18,6 +18,11 @@ app.get("/about", (req,res) => {
     res.send("welcome to about page")
 })
 
+app.get("/contact", (req,res) => {
+    console.log("1")
+    res.send("contact details are here")
+})
+
 app.listen(8080, () => {
     console.log("app is running")
 })
