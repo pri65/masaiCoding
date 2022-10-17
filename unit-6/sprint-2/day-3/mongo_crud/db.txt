@@ -1,0 +1,97 @@
+//CRUD ->
+    db.collection_name.CRUD
+
+    Read -> .find()
+            .find({key:value})
+            .findOne() - returns the first matching document
+            .findOne({key : value})
+                     .pretty()
+
+    Create -> .insertMany([{}, {}]) - insert/create 1 or many documents
+              .insertOne({})
+
+
+    Update -> .updateOne({criteria/target}, {updatedValues})
+            .updateMany({target},{updatedValues})
+
+
+            //atomic operators - 
+                 $set - new key-value pair, modifying/updating a key-value
+                 $inc -
+
+
+    Delete -> .deleteOne({target})
+              .deleteMany({target})
+
+              // - Mongo is installed and working -> mongosh
+              // - try out basic CRUD
+
+
+
+
+
+//CRUD -
+   
+
+decreasing a num - $inc and negative value; 
+  db.users.updateMany({age : 31}, {$inc : {age : -5}})
+
+indexing - 
+          O(1) - when finding by ID 
+          O(n) - traversing through all documents
+
+
+
+// _id is indexed by default in mongo -> O(1)
+// name -> we can index the keys that we want to, read more on indexing from documentation
+
+
+//.pretty()
+//.limit(no) - limits the resulting documents to that number
+//.skip(no) - skips that number of resulting documents
+
+
+//page_no=3 per_page = 5
+
+db.find().skip(10).limit(5)
+
+
+formula for skip = (page_no - 1)*per_page
+
+//.sort({key : 1/-1}) = asc = 1, desc = -1
+
+//ASCII - 
+
+//.collation
+
+//logical operators
+
+//AND - 
+//country India, city Pune - db.users.find({country : "India", city : "Pune", age : 25}).pretty()
+
+
+
+// OR - {$or : [{},{},{}]}
+
+
+//Comparison operators
+>  gt
+>= gte
+<  lt
+<= lte
+== eq
+!= ne
+
+
+//field or keys:
+
+$exists
+$unset  - {$unset : {key_name : ""}}
+$rename - 
+
+//accessing nested documents "key.key.key" : "value"
+
+
+// 1 should we remember all these queries? - NO
+// 2 documentation ->
+// 3 cheatSheet ->

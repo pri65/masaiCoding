@@ -1,0 +1,15 @@
+express => makes things easier for us
+it is built on the top of http module of node 
+
+
+## npm init -y
+## npm i express
+## npm i nodemon
+## lastly when you want to execute your code
+nodemon filename.js
+
+* in express we need to remember two things method+route
+
+
+## if nodemon is not working then run this command
+npm install -g nodemon

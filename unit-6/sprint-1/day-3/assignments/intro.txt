@@ -1,0 +1,24 @@
+response.send -> adds the content to the response body. The content can be a Buffed object, a string or an Array.
+response.status -> sets the HTTP status
+response.json -> sends a JSON response (with the correct content-type) that is the parameter converted to a JSON string using JSON.stringify().
+
+
+
+//building REST application
+Express can help us to write a RESTfull API for our todoList app.
+ -> GET / retrieve the list of tasks
+ -> POST / create a new task
+ -> PUT /:id update the task of id id
+ -> DELETE /:id
+
+
+ //we will use the parser-body module
+ body parser is a middleware
+ Middleware functions can perform the following tasks:
+ -> Execute any code.
+ -> Make changes to the request and the response objects.
+ -> End the request-response cycle.
+ -> Call the next middleware function in the stack.
+
+
+ //Express allows to extract parameters from the url. A parameter is defined in an URL with the ":" prefix. It is available as a member of request.params.
